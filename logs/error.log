@@ -1,0 +1,21 @@
+
+[1\16\12 6:23PM] Error: ENOENT, no such file or directory 'C:\css\bootstrap.css'
+[1\16\12 6:23PM] Error: ENOENT, no such file or directory 'C:\css\main.css'
+[1\16\12 7:13PM] TypeError: Cannot read property '1' of null
+    at getExtensionType (C:\Users\Zerotension\Desktop\code\server\static\walk.js:44:14)
+    at Object.getContentType (C:\Users\Zerotension\Desktop\code\server\static\walk.js:30:10)
+    at Server.<anonymous> (C:\Users\Zerotension\Desktop\code\server\utils\request.js:12:50)
+    at Server.emit (events.js:70:17)
+    at HTTPParser.onIncoming (http.js:1491:12)
+    at HTTPParser.onHeadersComplete (http.js:102:31)
+    at Socket.ondata (http.js:1387:22)
+    at TCP.onread (net.js:354:27)
+[1\16\12 7:14PM] TypeError: Cannot read property '1' of null
+    at getExtensionType (C:\Users\Zerotension\Desktop\code\server\static\walk.js:44:14)
+    at Object.getContentType (C:\Users\Zerotension\Desktop\code\server\static\walk.js:30:10)
+    at Server.<anonymous> (C:\Users\Zerotension\Desktop\code\server\utils\request.js:12:50)
+    at Server.emit (events.js:70:17)
+    at HTTPParser.onIncoming (http.js:1491:12)
+    at HTTPParser.onHeadersComplete (http.js:102:31)
+    at Socket.ondata (http.js:1387:22)
+    at TCP.onread (net.js:354:27)

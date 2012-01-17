@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>eKamadeva</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+      }
+    </style>
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap-dropdown.js"></script>
+	<script src="js/modify_profile.js"></script>
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="#">eKamadeva</a>
+          <ul class="nav">
+            <li ><a href="logged_in.html">Home</a></li>
+			<li class="dropdown active" data-dropdown="dropdown" >
+				<a href="#" class="dropdown-toggle">Profile</a>
+				<ul class="dropdown-menu">
+				  <li><a href="modify_profile.html">Modify</a></li>
+				  <li><a href="#">View</a></li>
+				  <li class="divider"></li>
+				  <li><a href="#">Preferences</a></li>
+				</ul>
+			</li>
+			<li><a href="inbox.html">Inbox</a></li>
+			<li><a href="#contact">Find Matches</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+			<p class="pull-right">Logged in as <a href="#">username</a></p>
+        </div>
+      </div>
+    </div>
+	<style>
+		#page { 
+			background-color:white;
+			margin-top:-20px;
+		}
+		#picHold{
+			width:330px;
+			margin-left:150px;
+			margin-right:auto;
+		}
+		.tebow{
+			text-align:right;
+		}
+	</style>
+    <div class="container-fluid">
+      <div class="content_b">
+        <div class="hero-unit">
+			<ul class="tabs">
+			  <li class="active"><a class="tab_click" id="t0" href="#">Basic Information</a></li>
+			  <li><a class="tab_click" id="t1" href="#">Health and Living</a></li>
+			  <li><a class="tab_click" id="t2" href="#">Work and Education</a></li>
+			  <li><a class="tab_click" id="t3" href="#">Likes and Dislikes</a></li>
+			  <li><a class="tab_click" id="t4" href="#">Contact Info</a></li>
+			  <li><a class="tab_click" id="t5" href="#">Preferences</a></li>
+			</ul>
+			<div class="well" id="page">
+				<div id="p0" class="tab_page">
+					<form>
+						<fieldset>
+							<legend>Basic Information</legend>
+								<hr>
+								<div id="picHold">
+									<center>
+										<h3>Profile Picture</h3>
+										<img class="thumbnail" src="http://placehold.it/330x230" alt="">
+										<br>
+										<div class="tebow">
+										<button class="btn primary">Upload Picture</button>
+										</div>
+									</center>
+								</div>
+								<hr>
+								<label for="description">Breif Description</label>
+								<div class="input">
+								  <textarea class="xxlarge" id="description" name="description" rows="3"></textarea>
+								  <span class="help-block">
+									Please provide a breif description of yourself.
+								  </span>
+								</div>
+							</fieldset>
+						</form>
+				</div>
+				<div id="p1" class="tab_page">
+					<form>
+						<fieldset>
+							<legend>Health and Living</legend>
+								<hr>
+						</fieldset>
+					</form>
+				</div>
+				<div id="p2" class="tab_page">
+					<form>
+						<fieldset>
+							<legend>Work and Education</legend>
+								<hr>
+						</fieldset>
+					</form>
+				</div>
+				<div id="p3" class="tab_page">
+					<form>
+						<fieldset>
+							<legend>Likes and Dislikes</legend>
+								<hr>
+						</fieldset>
+					</form>
+				</div>
+				<div id="p4" class="tab_page">
+					<form>
+						<fieldset>
+							<legend>Contact Info</legend>
+								<hr>
+						</fieldset>
+					</form>
+				</div>
+				<div id="p5" class="tab_page">
+					<form>
+						<fieldset>
+							<legend>Preferences</legend>
+								<hr>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+        </div>  
+  </body>
+</html>

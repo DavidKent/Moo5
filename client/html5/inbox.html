@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>eKamadeva</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+      }
+    </style>
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap-dropdown.js"></script>
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="#">eKamadeva</a>
+          <ul class="nav">
+            <li ><a href="logged_in.html">Home</a></li>
+			<li class="dropdown" data-dropdown="dropdown" >
+				<a href="#" class="dropdown-toggle">Profile</a>
+				<ul class="dropdown-menu">
+				  <li><a href="modify_profile.html">Modify</a></li>
+				  <li><a href="#">View</a></li>
+				  <li class="divider"></li>
+				  <li><a href="#">Preferences</a></li>
+				</ul>
+			</li>
+			<li class="active"><a href="inbox.html">Inbox</a></li>
+			<li><a href="#contact">Find Matches</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+			<p class="pull-right">Logged in as <a href="#">username</a></p>
+        </div>
+      </div>
+    </div>
+	<style>
+		#page { 
+			background-color:white;
+			margin-top:-20px;
+		}
+		#picHold{
+			width:330px;
+			margin-left:150px;
+			margin-right:auto;
+		}
+		.tebow{
+			text-align:right;
+		}
+		.tell {
+		    font-size:22px;
+		}
+	</style>
+    <div class="container-fluid">
+		<div class="sidebar">
+			<div class="well">
+				<button style="width:100px"class="btn">Inbox</button><hr>
+				<button style="width:100px"class="btn">Sent</button><hr>
+				<button style="width:100px"class="btn">Deleted</button>
+			</div>
+		</div>
+		<div class="content">
+			<div class="hero-unit">
+				<div class="well">
+					<table>
+						<tr>
+							<td style="width:220px">
+								<a href="#">
+									<img class="thumbnail" src="http://placehold.it/210x150" alt=""><br>
+									<h6>Georgeclooney22</h6>
+								</a>
+							</td>
+							<td>
+								<div class="well description">
+									<h4>Sent on 1/11/2012, Lorem ipsum dolor sit amet, consectetur adipisicing elit...</h4>
+								</div>
+								<div style="font-size:14px;" class="well tell">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+							</td>
+							<td>
+								<div class="pagination" style="float:right">
+									<ul>
+									  <li><a href="#">Block User</a></li>
+									  <li><a href="#">Delete</a></li>
+									  <li><a href="#">Reply</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="well">
+					<table>
+						<tr>
+							<td style="width:220px">
+								<a href="#">
+									<img class="thumbnail" src="http://placehold.it/210x150" alt=""><br>
+									<h6>Hersheykiss18</h6>
+								</a>
+							</td>
+							<td>
+								<div class="well description">
+									<h2>Sent on 1/11/2012, Lorem ipsum dolor sit amet, consectetur adipisicing elit...</h2>
+								</div>
+								<div class="well tell">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+							</td>
+							<td>
+								<div class="pagination" style="float:right">
+									<ul>
+									  <li><a href="#">Block User</a></li>
+									  <li><a href="#">Delete</a></li>
+									  <li><a href="#">Reply</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="pagination" style="margin-left:auto; margin-right:auto">
+					<ul>
+					  <li class="prev disabled"><a href="#">< Previous</a></li>
+					  <li class="active"><a href="#">1</a></li>
+					  <li><a href="#">2</a></li>
+					  <li><a href="#">3</a></li>
+					  <li><a href="#">4</a></li>
+					  <li><a href="#">5</a></li>
+					  <li class="next"><a href="#">Next ></a></li>
+					</ul>
+				</div>
+			</div>  
+		</div>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+span{
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+}
+.title_bar {
+	color:white;
+	background-color:darkred;
+}
+#reg_box_items_right {
+	text-align:right;
+}
+#nav_bar, #nav_bar_login {
+	width:100%;
+	height:37px;
+	left:0px;
+	top:0px;
+	position:absolute;
+}
+.recent_members_in{
+	height:90%;
+}
+.nav_bar_info_text, .nav_bar_login_text {
+	height:37px;
+	margin-left:12px;
+	font-size:30px;
+}
+.left_align_box{
+	text-align:left;
+	margin-left:30px;
+}
+#reg_submit {
+	background-color:#480000;
+	color:white;
+	width:80px;
+	height:30px;
+	text-align:center;
+	font-size:18px;
+	margin-top:10px;
+	margin-left:320;
+}
+.special_reg_box {
+	width:263px;
+	height:30px;
+	margin-left:20px;
+	margin-top:5px;
+}
+.holder {
+	width:980;
+	height:100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.nav_bar_login_text {
+	font-size:40px;
+	font-weight:bold;
+}
+.collumn_right_login {
+	float:right;
+	width:400px;
+	height:500px;
+	margin-top:100px;
+}
+.power_label {
+	font-size:22px;
+	font-weight:bold;
+}
+.collumn_left_login {
+	float:left;
+	width:530px;
+	height:600px;
+	margin-top:100px;
+}
+#login_button {
+	margin-top:20px;
+	height:22px;
+	font-size:16px;
+	width:60px;
+	background-color:#480000;
+	text-align:center;
+}
+.login_form {
+	float:right;
+	margin-right:20px;
+	margin-top:5px;
+}
+.Label {
+	color:white;
+	font-size:11px;
+}
+.subtle_label {
+	color:lightgrey;
+	font-size:11px;
+}
+#nav_logo {
+	margin-top:9px;
+	margin-left:10px;
+}
+.nav_bar_button {
+	float:right;
+	height:37px;
+	font-size:22px;
+	margin-top:5px;
+	
+}
+.nav_bar_button_text {
+	margin-left:5px;
+	margin-right:5px;
+	text-align:center;
+}
+#nav_bar_login {
+	height:73px;
+}
