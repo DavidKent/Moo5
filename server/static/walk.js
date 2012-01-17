@@ -4,7 +4,7 @@ var fs = require('fs');
 var image_fileTypes = ['jpg','bmp','gif','png'], html_fileTypes = ['htm','html','xml'],
 css_fileType = "css", script_fileType = "js";
 var file_urls = [], files   = [];
-var cut_off = "./client/html";
+var cut_off = "./client/html5";
 exports.loadResources = function(){
 var resource_Dir = "./client";
 
