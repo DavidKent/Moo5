@@ -32,9 +32,8 @@ function Message (args)
 		$("#"+this.id).find('.message_body').hide(time);
 	}
 	this.show = function(){
-		$("#"+this.id).find('.top_desc').fadeOut(300, function(){
-			$("#"+this.id).find('.message_body').show(300);
-		});
+		$("#"+this.id).find('.top_desc').fadeOut(300);
+		$("#"+this.id).find('.message_body').fadeIn(300);
 		
 	}
 	this.id = args.id;
