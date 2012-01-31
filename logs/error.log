@@ -1,21 +1,199 @@
 
-[1\16\12 6:23PM] Error: ENOENT, no such file or directory 'C:\css\bootstrap.css'
-[1\16\12 6:23PM] Error: ENOENT, no such file or directory 'C:\css\main.css'
-[1\16\12 7:13PM] TypeError: Cannot read property '1' of null
-    at getExtensionType (C:\Users\Zerotension\Desktop\code\server\static\walk.js:44:14)
-    at Object.getContentType (C:\Users\Zerotension\Desktop\code\server\static\walk.js:30:10)
-    at Server.<anonymous> (C:\Users\Zerotension\Desktop\code\server\utils\request.js:12:50)
+[1\29\12 4:3PM] TypeError: Object 4 has no method 'indexOf'
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:25:33)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Parse (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:12:25)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:7:9
+[1\29\12 4:3PM] TypeError: Object 4 has no method 'indexOf'
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:25:33)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Parse (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:12:25)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:7:9
+[1\29\12 4:4PM] TypeError: Object 4 has no method 'indexOf'
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:25:33)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Parse (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:12:25)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:7:9
+[1\29\12 4:12PM] ' rest' is an unrecognized command.
+[1\29\12 4:17PM] TypeError: Cannot call method 'search' of null
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Parse (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:12:25)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:7:9
+    at [object Object].<anonymous> (fs.js:115:5)
+[1\29\12 4:19PM] TypeError: Object 4 has no method 'indexOf'
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:24:28)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Array.search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:30)
+    at Parse (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:12:25)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:7:9
+[1\29\12 5:34PM] TypeError: Object #<Node> has no method 'push'
+    at Parse (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:15:24)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:7:9
+    at [object Object].<anonymous> (fs.js:115:5)
+    at [object Object].emit (events.js:64:17)
+    at afterRead (fs.js:1111:12)
+    at Object.wrapper [as oncomplete] (fs.js:254:17)
+[1\29\12 5:42PM] ReferenceError: u is not defined
+    at makeTree (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:25:35)
+    at Parse (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:13:29)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:7:9
+    at [object Object].<anonymous> (fs.js:115:5)
+    at [object Object].emit (events.js:64:17)
+    at afterRead (fs.js:1111:12)
+    at Object.wrapper [as oncomplete] (fs.js:254:17)
+[1\29\12 5:45PM] '  restart' is an unrecognized command.
+[1\29\12 5:45PM] ' restart' is an unrecognized command.
+[1\29\12 5:48PM] ' restart' is an unrecognized command.
+[1\29\12 5:48PM] TypeError: Cannot read property 'length' of null
+    at makeTree (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:19:36)
+    at makeTree (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:23:31)
+    at makeTree (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:23:31)
+    at makeTree (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:23:31)
+    at makeTree (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:23:31)
+    at makeTree (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:23:31)
+    at makeTree (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:23:31)
+    at makeTree (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:23:31)
+    at Parse (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:13:29)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:7:9
+[1\29\12 5:52PM] TypeError: Cannot read property '0' of undefined
+    at Parse (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:14:45)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:7:9
+    at [object Object].<anonymous> (fs.js:115:5)
+    at [object Object].emit (events.js:64:17)
+    at afterRead (fs.js:1111:12)
+    at Object.wrapper [as oncomplete] (fs.js:254:17)
+[1\29\12 6:3PM] TypeError: Cannot read property 'length' of undefined
+    at search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:35:27)
+    at search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:38:23)
+    at search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:38:23)
+    at search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:38:23)
+    at search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:38:23)
+    at Parse (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:14:21)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:7:9
+    at [object Object].<anonymous> (fs.js:115:5)
+    at [object Object].emit (events.js:64:17)
+    at afterRead (fs.js:1111:12)
+[1\29\12 6:3PM] TypeError: Cannot read property 'length' of undefined
+    at search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:35:27)
+    at search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:39:27)
+    at search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:39:27)
+    at search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:39:27)
+    at search (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:39:27)
+    at Parse (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:14:21)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:7:9
+    at [object Object].<anonymous> (fs.js:115:5)
+    at [object Object].emit (events.js:64:17)
+    at afterRead (fs.js:1111:12)
+[1\29\12 6:7PM] TypeError: Object 4 has no method 'indexOf'
+    at makeTree (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:27:33)
+    at makeTree (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:24:35)
+    at makeTree (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:24:35)
+    at makeTree (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:24:35)
+    at makeTree (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:24:35)
+    at makeTree (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:24:35)
+    at makeTree (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:24:35)
+    at makeTree (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:24:35)
+    at Parse (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:13:29)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:7:9
+[1\29\12 6:12PM] ' restart' is an unrecognized command.
+[1\29\12 6:13PM] ' restart' is an unrecognized command.
+[1\29\12 6:13PM] ' ' is an unrecognized command.
+[1\29\12 6:13PM] TypeError: Cannot read property '1' of undefined
+    at Parse (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:14:61)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:7:9
+    at [object Object].<anonymous> (fs.js:115:5)
+    at [object Object].emit (events.js:64:17)
+    at afterRead (fs.js:1111:12)
+    at Object.wrapper [as oncomplete] (fs.js:254:17)
+[1\29\12 6:14PM] TypeError: Cannot read property '0' of undefined
+    at Parse (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:14:61)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:7:9
+    at [object Object].<anonymous> (fs.js:115:5)
+    at [object Object].emit (events.js:64:17)
+    at afterRead (fs.js:1111:12)
+    at Object.wrapper [as oncomplete] (fs.js:254:17)
+[1\29\12 6:14PM] ' restart' is an unrecognized command.
+[1\29\12 6:14PM] ' ' is an unrecognized command.
+[1\29\12 6:23PM] TypeError: Cannot read property '1' of undefined
+    at Parse (C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:14:48)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\parser.js:7:9
+    at [object Object].<anonymous> (fs.js:115:5)
+    at [object Object].emit (events.js:64:17)
+    at afterRead (fs.js:1111:12)
+    at Object.wrapper [as oncomplete] (fs.js:254:17)
+[1\30\12 3:22PM] ReferenceError: request is not defined
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\main.js:19:68
+    at Server.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Quasar\Quasar.js:70:9)
+    at Server.g (events.js:154:14)
+    at Server.emit (events.js:64:17)
+    at Array.0 (net.js:747:10)
+    at EventEmitter._tickCallback (node.js:192:40)
+[1\30\12 3:40PM] Error: listen EADDRINUSE
+    at errnoException (net.js:640:11)
+    at Array.0 (net.js:741:26)
+    at EventEmitter._tickCallback (node.js:192:40)
+[1\30\12 3:40PM] ReferenceError: request is not defined
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\main.js:19:68
+    at Server.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Quasar\Quasar.js:70:9)
+    at Server.g (events.js:154:14)
+    at Server.emit (events.js:64:17)
+    at Array.0 (net.js:747:10)
+    at EventEmitter._tickCallback (node.js:192:40)
+[1\30\12 3:43PM] TypeError: undefined is not a function
+    at Server.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\utils\request.js:23:9)
     at Server.emit (events.js:70:17)
     at HTTPParser.onIncoming (http.js:1491:12)
     at HTTPParser.onHeadersComplete (http.js:102:31)
     at Socket.ondata (http.js:1387:22)
     at TCP.onread (net.js:354:27)
-[1\16\12 7:14PM] TypeError: Cannot read property '1' of null
-    at getExtensionType (C:\Users\Zerotension\Desktop\code\server\static\walk.js:44:14)
-    at Object.getContentType (C:\Users\Zerotension\Desktop\code\server\static\walk.js:30:10)
-    at Server.<anonymous> (C:\Users\Zerotension\Desktop\code\server\utils\request.js:12:50)
-    at Server.emit (events.js:70:17)
-    at HTTPParser.onIncoming (http.js:1491:12)
-    at HTTPParser.onHeadersComplete (http.js:102:31)
-    at Socket.ondata (http.js:1387:22)
-    at TCP.onread (net.js:354:27)
+[1\30\12 3:47PM] TypeError: Object #<EventEmitter> has no method 'test'
+    at EventEmitter.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\static\walk.js:19:18)
+    at EventEmitter.emit (events.js:64:17)
+    at next (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\walk\walk.js:140:15)
+    at next (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\walk\walk.js:138:16)
+    at next (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\walk\walk.js:138:16)
+    at next (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\walk\walk.js:138:16)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\walk\walk.js:70:11
+    at nextWhenReady (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\walk\node-type-emitter.js:68:24)
+    at Object.emitPluralEvents [as emitNodeTypeGroups] (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\walk\node-type-emitter.js:76:5)
+    at postFilesHandler (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\walk\walk.js:63:21)
+[1\30\12 3:48PM] ' restart' is an unrecognized command.
+[1\30\12 3:48PM] '  ' is an unrecognized command.
+[1\30\12 4:24PM] TypeError: Object [object Object] has no method 'setServiceHandler'
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\main.js:19:15
+    at Server.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Quasar\Quasar.js:70:9)
+    at Server.g (events.js:154:14)
+    at Server.emit (events.js:64:17)
+    at Array.0 (net.js:747:10)
+    at EventEmitter._tickCallback (node.js:192:40)
+[1\30\12 4:31PM] ' restart' is an unrecognized command.
+[1\30\12 4:31PM] ' ' is an unrecognized command.

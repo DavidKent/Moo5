@@ -9,24 +9,32 @@ exports.getClientIp = function(request){
     };
     
 exports.connection = function(request, result){
+        console.log('a');
+        /*
         var h = url.parse(request.url).href, ct = moon.getContentType(h);
-        if(logRequest(h))
-            update(request);
-        if(tests)
-            moon.test();
-        result.writeHead(200, {'Content-Type': ct});
-        if(moon.getPage(h) == undefined)
-            result.end(moon.getPage('/register.html'));
-        result.end(moon.getPage(h));
-    };
-    function update(request) {
 
+        if(h.indexOf("client") != -1) {
+            if(logRequest(h))
+                update(request);
+            if(tests)
+                moon.test();
+            result.writeHead(200, {'Content-Type': ct});
+            if(moon.getPage(h) == undefined)
+                result.end(moon.getPage('/register.html'));
+            result.end(moon.getPage(h));
+        }
+        fn(request, result);*/
+    };
+    
+    function update(request) {
         requests++;
         cons.info("Connection["+requests+"] request recieved at "+ exports.getClientIp(request));
     }
+    
 exports.getRequests = function(){
         return requests;
     };
+    
     function logRequest(href){
         if(href.indexOf('html') == -1)
         return false;

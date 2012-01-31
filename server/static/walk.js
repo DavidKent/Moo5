@@ -4,7 +4,7 @@ var fs = require('fs');
 var image_fileTypes = ['jpg','bmp','gif','png'], html_fileTypes = ['htm','html','xml'],
 css_fileType = "css", script_fileType = "js";
 var file_urls = [], files   = [];
-var cut_off = "./client/html5";
+var cut_off = "./client/static";
 exports.loadResources = function(){
 var resource_Dir = "./client";
 
@@ -13,9 +13,11 @@ var walker  = walk.walk(resource_Dir, { followLinks: false });
         appendFile(root+'/'+stat.name);
         next();
     });
+    var self = this;
     walker.on('end', function() {
         cons.alert('Found ' + files.length + ' files in ' + resource_Dir + '.');
         cons.alert('Resources loaded successfully.');
+            self.test();
     });
 
 }
@@ -23,8 +25,7 @@ exports.getPage = function(url){
     return files[file_urls.indexOf(cut_off+url)];
 }
 exports.test = function(){
-//    cons.alert('test begin');
-//    cons.alert('test end');
+    cons.alert(file_urls[0]);
 }
 exports.getContentType = function(url){
     var h = getExtensionType(url);

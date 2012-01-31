@@ -15,6 +15,9 @@
                     case "stat print":
                         h.statPrint();
                     break;
+                    case "test":
+                        
+                    break;
                     case "restart":
                         cons.alert("Restarting the server...");
                         setCont(true);

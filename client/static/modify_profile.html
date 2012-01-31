@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="generator" content="HTML Tidy for Windows (vers 14 February 2006), see www.w3.org">
+    <meta charset="utf-8">
+    <title>
+      eKamadeva
+    </title>
+    <meta name="description" content="">
+    <meta name="author" content=""><!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+body {
+        padding-top: 60px;
+      }
+    </style><!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <script src="js/jquery.js" type="text/javascript">
+</script>
+    <script src="js/bootstrap-dropdown.js" type="text/javascript">
+</script>
+    <script src="js/modify_profile.js" type="text/javascript">
+</script>
+    <style type="text/css">
+        #page { 
+                        background-color:white;
+                        margin-top:-20px;
+                }
+                #picHold{
+                        width:330px;
+                        margin-left:150px;
+                        margin-right:auto;
+                }
+                .tebow{
+                        text-align:right;
+                }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="#">eKamadeva</a>
+          <ul class="nav">
+            <li>
+              <a href="logged_in.html">Home</a>
+            </li>
+            <li class="dropdown active" data-dropdown="dropdown">
+              <a href="#" class="dropdown-toggle">Profile</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="modify_profile.html">Modify</a>
+                </li>
+                <li>
+                  <a href="#">View</a>
+                </li>
+                <li>
+                  <a href="#">Preferences</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="inbox.html">Inbox</a>
+            </li>
+            <li>
+              <a href="#contact">Find Matches</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+          <p class="pull-right">
+            Logged in as <a href="#">username</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="content_b">
+        <div class="hero-unit">
+          <ul class="tabs">
+            <li class="active">
+              <a class="tab_click" id="t0" href="#">Basic Information</a>
+            </li>
+            <li>
+              <a class="tab_click" id="t1" href="#">Health and Living</a>
+            </li>
+            <li>
+              <a class="tab_click" id="t2" href="#">Work and Education</a>
+            </li>
+            <li>
+              <a class="tab_click" id="t3" href="#">Likes and Dislikes</a>
+            </li>
+            <li>
+              <a class="tab_click" id="t4" href="#">Contact Info</a>
+            </li>
+            <li>
+              <a class="tab_click" id="t5" href="#">Preferences</a>
+            </li>
+          </ul>
+          <div class="well" id="page">
+            <div id="p0" class="tab_page">
+              <form>
+                <fieldset>
+                  <legend>Basic Information</legend>
+                  <hr>
+                  <div id="picHold">
+                    <center>
+                      <h3>
+                        Profile Picture
+                      </h3><img class="thumbnail" src="http://placehold.it/330x230" alt=""><br>
+                      <div class="tebow">
+                        <button class="btn primary">Upload Picture</button>
+                      </div>
+                    </center>
+                  </div>
+                  <hr>
+                  <label for="description">Breif Description</label>
+                  <div class="input">
+                    <textarea class="xxlarge" id="description" name="description" rows="3">
+</textarea> <span class="help-block">Please provide a breif description of yourself.</span>
+                  </div>
+                  <hr>
+                  <div class="clearfix">
+                    <label for="languages">Languages Spoken</label>
+                    <div class="input">
+                      <select class="medium" size="5" multiple="multiple" name="languages" id="languages">
+                        <option value="Hindi">
+                          Hindi
+                        </option>
+                        <option value="Bengali">
+                          Bengali
+                        </option>
+                        <option value="Gujarati">
+                          Gujarati
+                        </option>
+                        <option value="Kannada">
+                          Kannada
+                        </option>
+                        <option value="Malayalam">
+                          Malayalam
+                        </option>
+                        <option value="Marathi">
+                          Marathi
+                        </option>
+                        <option value="Marwari">
+                          Marwari
+                        </option>
+                        <option value="Punjabi">
+                          Punjabi
+                        </option>
+                        <option value="Sindhi">
+                          Sindhi
+                        </option>
+                        <option value="Tamil">
+                          Tamil
+                        </option>
+                        <option value="Telegu">
+                          Telegu
+                        </option>
+                        <option value="Urdu">
+                          Urdu
+                        </option>
+                        <option value="Assamese">
+                          Assamese
+                        </option>
+                        <option value="Bhojpuri">
+                          Bhojpuri
+                        </option>
+                        <option value="Garhwali">
+                          Garhwali
+                        </option>
+                        <option value="Garo">
+                          Garo
+                        </option>
+                        <option value="Kashmiri">
+                          Kashmiri
+                        </option>
+                        <option value="Khasi">
+                          Khasi
+                        </option>
+                        <option value="Konkani">
+                          Konkani
+                        </option>
+                        <option value="Kutchi">
+                          Kutchi
+                        </option>
+                        <option value="Manipuri">
+                          Manipuri
+                        </option>
+                        <option value="Miji">
+                          Miji
+                        </option>
+                        <option value="Mizo">
+                          Mizo
+                        </option>
+                        <option value="Nepali">
+                          Nepali
+                        </option>
+                        <option value="Oriya">
+                          Oriya
+                        </option>
+                        <option value="Parsi">
+                          Parsi
+                        </option>
+                        <option value="Rajasthani">
+                          Rajasthani
+                        </option>
+                        <option value="Sanskrit">
+                          Sanskrit
+                        </option>
+                        <option value="Tulu">
+                          Tulu
+                        </option>
+                      </select> <span class="help-block">Press (ctrl + click) to select multiple languages</span>
+                    </div>
+                  </div>
+                  <hr>
+                  <script type="text/javascript">
+            $(document).ready(document_onReady);
+                                                function document_onReady() {
+                                                        $('#whofor').click(whofor_onSelect);
+                                for(var i = 2011; i > 1900; i--)
+                                $('#birthYear').append('<option value="' + i + '">' + i + '<\/option>');
+                                                }
+
+                                        function whofor_onSelect(e){
+                                                var h = $('#whofor').val();
+                                                var index ="Male";
+                                                switch(h)
+                                                {
+                                                        case "Daughter":
+                                                                index="Female";
+                                                        break;
+                                                        case "Granddaughter":
+                                                                index="Female";
+                                                        break;
+                                                }
+                                                $('#gender').val(index);
+                                        }
+                            
+                  </script>
+                  <div class="clearfix">
+                    <label for="whofor">Who is this profile for?</label>
+                    <div class="input">
+                      <select name="whofor" id="whofor">
+                        <option value="Myself">
+                          Myself
+                        </option>
+                        <option value="Son">
+                          Son
+                        </option>
+                        <option value="Daughter">
+                          Daughter
+                        </option>
+                        <option value="Grandson">
+                          Grandson
+                        </option>
+                        <option value="Granddaughter">
+                          Granddaughter
+                        </option>
+                        <option value="Other">
+                          Other
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="clearfix">
+                    <label for="gender">What is your/their gender?</label>
+                    <div class="input">
+                      <select name="gender" id="gender">
+                        <option value="Male">
+                          Male
+                        </option>
+                        <option value="Female">
+                          Female
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="clearfix">
+                    <label for="birthMonth">Day of birth</label>
+                    <div class="input">
+                      <select class="medium" name="birthMonth" id="birthMonth">
+                        <option value="January">
+                          January
+                        </option>
+                        <option value="Febuary">
+                          Febuary
+                        </option>
+                        <option value="March">
+                          March
+                        </option>
+                        <option value="April">
+                          April
+                        </option>
+                        <option value="May">
+                          May
+                        </option>
+                        <option value="June">
+                          June
+                        </option>
+                        <option value="July">
+                          July
+                        </option>
+                        <option value="August">
+                          August
+                        </option>
+                        <option value="September">
+                          September
+                        </option>
+                        <option value="October">
+                          October
+                        </option>
+                        <option value="November">
+                          November
+                        </option>
+                        <option value="December">
+                          December
+                        </option>
+                      </select> <select class="small span1" name="birthDay" id="birthDay">
+                        <option value="1">
+                          1
+                        </option>
+                        <option value="2">
+                          2
+                        </option>
+                        <option value="3">
+                          3
+                        </option>
+                        <option value="4">
+                          4
+                        </option>
+                        <option value="5">
+                          5
+                        </option>
+                        <option value="6">
+                          6
+                        </option>
+                        <option value="7">
+                          7
+                        </option>
+                        <option value="8">
+                          8
+                        </option>
+                        <option value="9">
+                          9
+                        </option>
+                        <option value="10">
+                          10
+                        </option>
+                        <option value="11">
+                          11
+                        </option>
+                        <option value="12">
+                          12
+                        </option>
+                        <option value="13">
+                          13
+                        </option>
+                        <option value="14">
+                          14
+                        </option>
+                        <option value="15">
+                          15
+                        </option>
+                        <option value="16">
+                          16
+                        </option>
+                        <option value="17">
+                          17
+                        </option>
+                        <option value="18">
+                          18
+                        </option>
+                        <option value="19">
+                          19
+                        </option>
+                        <option value="20">
+                          20
+                        </option>
+                        <option value="21">
+                          21
+                        </option>
+                        <option value="22">
+                          22
+                        </option>
+                        <option value="23">
+                          23
+                        </option>
+                        <option value="24">
+                          24
+                        </option>
+                        <option value="25">
+                          25
+                        </option>
+                        <option value="26">
+                          26
+                        </option>
+                        <option value="27">
+                          27
+                        </option>
+                        <option value="28">
+                          28
+                        </option>
+                        <option value="29">
+                          29
+                        </option>
+                        <option value="30">
+                          30
+                        </option>
+                        <option value="31">
+                          31
+                        </option>
+                      </select> <select class="medium" name="birthYear" id="birthYear">
+                        </select> <span class="help-block"><b>Month</b><b style="margin-left:115px;">Day</b><b style="margin-left:70px;">Year</b></span>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <div id="p1" class="tab_page">
+              <form>
+                <fieldset>
+                  <legend>Health and Living</legend>
+                  <div class="clearfix">
+                    <label for="religionh">What religion are you?</label>
+                    <div class="input">
+                      <select name="religionh" id="religionh">
+                        <option value="Hindu">
+                          Hindu
+                        </option>
+                        <option value="Muslim">
+                          Muslim
+                        </option>
+                        <option value="Christian">
+                          Christian
+                        </option>
+                        <option value="Jewish">
+                          Jewish
+                        </option>
+                        <option value="Bhuddist">
+                          Bhuddist
+                        </option>
+                        <option value="Sikh">
+                          Sikh
+                        </option>
+                        <option value="Parsi">
+                          Parsi
+                        </option>
+                        <option value="Jain">
+                          Jain
+                        </option>
+                        <option value="Spiritual">
+                          Spiritual
+                        </option>
+                        <option value="Non-Religious">
+                          Non-Religious
+                        </option>
+                        <option value="Athiest">
+                          Athiest
+                        </option>
+                        <option value="Agnostic">
+                          Agnostic
+                        </option>
+                        <option value="Other">
+                          Other
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="clearfix">
+                    <label for="statush">What is your marital status?</label>
+                    <div class="input">
+                      <select name="statush" id="statush">
+                        <option value="Single">
+                          Single
+                        </option>
+                        <option value="Widowed">
+                          Widowed
+                        </option>
+                        <option value="Divorced">
+                          Divorced
+                        </option>
+                        <option value="Awaiting Divorce">
+                          Awaiting Divorce
+                        </option>
+                        <option value="Married">
+                          Married
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="clearfix">
+                    <label for="valuesh">What are your values</label>
+                    <div class="input">
+                      <select name="valuesh" id="valuesh">
+                        <option value="Traditional">
+                          Traditional
+                        </option>
+                        <option value="Moderate">
+                          Moderate
+                        </option>
+                        <option value="Liberal">
+                          Liberal
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="clearfix">
+                    <label for="politicalh">What are your values</label>
+                    <div class="input">
+                      <select name="politicalh" id="politicalh">
+                        <option value="Liberal">
+                          Liberal
+                        </option>
+                        <option value="Moderate">
+                          Moderate
+                        </option>
+                        <option value="Conservative">
+                          Conservative
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="clearfix">
+                    <label for="heighth">What is your height (Cm)</label>
+                    <div class="input">
+                      <input class="span2" id="heighth" name="heighth" type="text" placeholder="180">
+                    </div>
+                  </div>
+                  <div class="clearfix">
+                    <label for="weighth">What is your weight (Kg)</label>
+                    <div class="input">
+                      <input class="span2" id="weighth" name="weighth" type="text" placeholder="75">
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="clearfix">
+                    <label for="ethnicityh">What is your ethnicity?</label>
+                    <div class="input">
+                      <select name="ethnicityh" id="ethnicityh">
+                        <option value="SIndia">
+                          South India
+                        </option>
+                        <option value="NIndia">
+                          North India
+                        </option>
+                        <option value="MIndia">
+                          Middle India
+                        </option>
+                        <option value="Black">
+                          Black
+                        </option>
+                        <option value="AsianO">
+                          Asian/Oriental
+                        </option>
+                        <option value="AsianS">
+                          Asian Subcontinent
+                        </option>
+                        <option value="White">
+                          White
+                        </option>
+                        <option value="Other">
+                          Other
+                        </option>
+                      </select>
+                    </div>
+                    <hr>
+                    <div class="clearfix">
+                      <label for="dieth">What is your diet?</label>
+                      <div class="input">
+                        <select name="dieth" id="dieth">
+                          <option value="Regular">
+                            Regular
+                          </option>
+                          <option value="Vegetarian">
+                            Vegetarian
+                          </option>
+                          <option value="Vegan">
+                            Vegan
+                          </option>
+                          <option value="Restricted">
+                            Restricted
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="clearfix">
+                      <label for="exerciseh">How often do you exercise?</label>
+                      <div class="input">
+                        <select name="exerciseh" id="exerciseh">
+                          <option value="Everyday">
+                            Everyday
+                          </option>
+                          <option value="2-3 times a week">
+                            2-3 times a week
+                          </option>
+                          <option value="Once a week">
+                            Once a week
+                          </option>
+                          <option value="Once a month">
+                            Once a month
+                          </option>
+                          <option value="Never">
+                            Never
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="clearfix">
+                      <label for="body_typeh">What is your body type?</label>
+                      <div class="input">
+                        <select name="body_typeh" id="body_typeh">
+                          <option value="More to love">
+                            More to love
+                          </option>
+                          <option value="A little extra">
+                            A little extra
+                          </option>
+                          <option value="Average">
+                            Average
+                          </option>
+                          <option value="Athletic">
+                            Athletic
+                          </option>
+                          <option value="Slim">
+                            Slim
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="clearfix">
+                      <label for="smokerh">Do you smoke?</label>
+                      <div class="input">
+                        <select name="smokerh" id="smokerh">
+                          <option value="Yes">
+                            Yes
+                          </option>
+                          <option value="No">
+                            No
+                          </option>
+                          <option value="Occasionally">
+                            Occasionally
+                          </option>
+                          <option value="Trying to quit">
+                            Trying to quit
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="clearfix">
+                      <label for="drinkerh">Do you drink alcohol?</label>
+                      <div class="input">
+                        <select name="drinkerh" id="drinkerh">
+                          <option value="Yes">
+                            Yes
+                          </option>
+                          <option value="No">
+                            No
+                          </option>
+                          <option value="Occasionally">
+                            Occasionally
+                          </option>
+                          <option value="Trying to quit">
+                            Socially
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="clearfix">
+                      <label for="drugsh">Do you do drugs?</label>
+                      <div class="input">
+                        <select name="drugsh" id="drugsh">
+                          <option value="Yes">
+                            Yes
+                          </option>
+                          <option value="No">
+                            No
+                          </option>
+                          <option value="Socially">
+                            Socially
+                          </option>
+                          <option value="Occasionally">
+                            Occasionally
+                          </option>
+                          <option value="Only Marijuana">
+                            Only Marijuana
+                          </option>
+                          <option value="Recovering addict">
+                            Recovering addict
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <hr>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+      
+          <div id="p2" class="tab_page">
+            <form>
+              <fieldset>
+                <legend>Work and Education</legend>
+                <hr>
+              </fieldset>
+            </form>
+          </div>
+          <div id="p3" class="tab_page">
+            <form>
+              <fieldset>
+                <legend>Likes and Dislikes</legend>
+                <hr>
+              </fieldset>
+            </form>
+          </div>
+          <div id="p4" class="tab_page">
+            <form>
+              <fieldset>
+                <legend>Contact Info</legend>
+                <hr>
+              </fieldset>
+            </form>
+          </div>
+          <div id="p5" class="tab_page">
+            <form>
+              <fieldset>
+                <legend>Preferences</legend>
+                <div class="clearfix">
+                  <label for="relationshipi">What relationship type do you have in mind?</label>
+                  <div class="input">
+                    <select name="relationshipi" id="relationshipi">
+                      <option value="Marriage">
+                        Marriage
+                      </option>
+                      <option value="Long Relationship">
+                        Long Relationship
+                      </option>
+                      <option value="Dating">
+                        Dating
+                      </option>
+                      <option value="Friendship">
+                        Friendship
+                      </option>
+                      <option value="Not Sure">
+                        Not Sure
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <label for="genderi">What gender do you want your match to be?</label>
+                  <div class="input">
+                    <select name="genderi" id="genderi">
+                      <option value="Woman">
+                        Woman
+                      </option>
+                      <option value="Man">
+                        Man
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <hr>
+                <div class="clearfix">
+                  <label for="agei">How important is your match's age?</label>
+                  <div class="input">
+                    <select name="agei" id="agei">
+                      <option value="Very">
+                        Very
+                      </option>
+                      <option value="Somewhat">
+                        Somewhat
+                      </option>
+                      <option value="Not">
+                        Not at all
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <label for="heighti">How important is your match's height?</label>
+                  <div class="input">
+                    <select name="heighti" id="heighti">
+                      <option value="Very">
+                        Very
+                      </option>
+                      <option value="Somewhat">
+                        Somewhat
+                      </option>
+                      <option value="Not">
+                        Not at all
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <hr>
+                <div class="clearfix">
+                  <label for="genderi">How important is your match's political views?</label>
+                  <div class="input">
+                    <select name="genderi" id="genderi">
+                      <option value="Very">
+                        Very
+                      </option>
+                      <option value="Somewhat">
+                        Somewhat
+                      </option>
+                      <option value="Not">
+                        Not at all
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <label for="religioni">How important is your match's religion?</label>
+                  <div class="input">
+                    <select name="religioni" id="religioni">
+                      <option value="Very">
+                        Very
+                      </option>
+                      <option value="Somewhat">
+                        Somewhat
+                      </option>
+                      <option value="Not">
+                        Not at all
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <hr>
+              </fieldset>
+            </form>
+          </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
