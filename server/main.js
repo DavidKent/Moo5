@@ -1,24 +1,31 @@
-    var http = require('http'),
-    handling = require('./utils/error_h.js'),
-    cons = require('./utils/console.js'),
-    req = require('./utils/request.js'),
-    hook = require('./utils/key_hook.js'),
-    com = require('./utils/commands.js'),
-    walk = require('./static/walk.js'),
-    quasar = require('./quasar/Quasar/Quasar.js');
-    var config = require( './Config.js' );
-    var routes = require( './Routes.js' );
-        
-        var test;
-        
-        handling.begin();
-        walk.loadResources();
-        var u = new quasar( routes, config );
-        u.init(function() {
-            cons.alert('Server now open for connectons.');
-            u.set('StaticFileServer', new Object());
-            u.router.setServiceHandler('StaticFileServer', req.connection);
+    var req = require('./applets/Requires.js'),
+    security = require('./Security.js');
+    
+    init();
+    
+    var server = new req.quasar( req.routes, req.config );
+    
+    server.set('StaticFileServer', new Object());
+    server.router.setServiceHandler('StaticFileServer', req.request.connection);
+    
+    var database = new security.database('test', "127.0.0.1", 27017);
+    var ironhide = new security.ironhide(server, database);
+    server.init(onServerStart);
+
+    function init(){
+        req.handling.begin();
+        req.walk.loadResources();
+        req.com.start();
+        req.hook.setHook();
+    }
+    function onServerStart() {
+        req.cons.alert('Server now open for connectons.');
+        database.connect(function() {
+            database.addCollections( function(){ 
+                console.log('Required collections not found, creating them.');
+            });
+            req.cons.alert('Database connected successfully.');
         });
-       
-        com.start();
-        hook.setHook();
+    }
+    exports.app = server;
+    exports.security = ironhide;

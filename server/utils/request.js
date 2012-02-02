@@ -1,30 +1,40 @@
 var cons = require('./console.js');
 var moon = require('../static/walk.js');
+
 var url = require('url');
 var requests = 0;
 var tests = false;
 
 exports.getClientIp = function(request){
-    return request.connection.remoteAddress;
+    return request.getClientIpAddress();
     };
     
 exports.connection = function(request, result){
-        console.log('a');
-        /*
-        var h = url.parse(request.url).href, ct = moon.getContentType(h);
-
-        if(h.indexOf("client") != -1) {
-            if(logRequest(h))
+        var newres = exports.getResult('/public', request, result);
+        if(newres != undefined)
+        newres.send();
+    }
+exports.outputLoginPage = function(request,result){
+        result.setStatusCode(200);
+        result.setContentType('text/html');
+        result.setContent(moon.getPage('/register.html'));
+        result.send();
+    }
+exports.getResult = function(cutoff, request, result) {
+        var h = request.getBasePath().replace(cutoff,''), ct = moon.getContentType(h);
+            if(moon.getPage(h) == undefined) {
+                exports.outputLoginPage(request, result);
+                return;
+            }
+            if(logRequest(ct))
                 update(request);
             if(tests)
                 moon.test();
-            result.writeHead(200, {'Content-Type': ct});
-            if(moon.getPage(h) == undefined)
-                result.end(moon.getPage('/register.html'));
-            result.end(moon.getPage(h));
-        }
-        fn(request, result);*/
-    };
+            result.setStatusCode(200);
+            result.setContentType(ct);
+            result.setContent(moon.getPage(h));
+            return result;
+    }
     
     function update(request) {
         requests++;
@@ -36,6 +46,7 @@ exports.getRequests = function(){
     };
     
     function logRequest(href){
+    //console.log(href);
         if(href.indexOf('html') == -1)
         return false;
      return true;

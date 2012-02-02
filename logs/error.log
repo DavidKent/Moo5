@@ -197,3 +197,228 @@
     at EventEmitter._tickCallback (node.js:192:40)
 [1\30\12 4:31PM] ' restart' is an unrecognized command.
 [1\30\12 4:31PM] ' ' is an unrecognized command.
+[1\31\12 9:44PM] 'esrestart' is an unrecognized command.
+[2\1\12 6:25PM] Error: Cannot find module 'C:\Users\Zerotension\Desktop\Moo5_test\server/applets/Inbox/index.js'
+    at Function._resolveFilename (module.js:334:11)
+    at Function._load (module.js:279:25)
+    at Module.require (module.js:357:17)
+    at require (module.js:368:17)
+    at [object Object].autoloadApplets (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Quasar\Quasar.js:96:21)
+    at new <anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Quasar\Quasar.js:44:10)
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\main.js:18:17)
+    at Module._compile (module.js:432:26)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+[2\1\12 8:2PM] ReferenceError: routes is not defined
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\main.js:6:34)
+    at Module._compile (module.js:432:26)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+    at Function._load (module.js:310:12)
+    at Array.0 (module.js:470:10)
+    at EventEmitter._tickCallback (node.js:192:40)
+[2\1\12 8:2PM] ReferenceError: cons is not defined
+    at onServerStart (C:\Users\Zerotension\Desktop\Moo5_test\server\main.js:21:9)
+    at Server.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Quasar\Quasar.js:69:9)
+    at Server.g (events.js:154:14)
+    at Server.emit (events.js:64:17)
+    at Array.0 (net.js:747:10)
+    at EventEmitter._tickCallback (node.js:192:40)
+[2\1\12 8:52PM] 'esrestart' is an unrecognized command.
+[2\1\12 8:52PM] ' ' is an unrecognized command.
+[2\1\12 8:52PM] Error: Cannot find module '.../Requires.js'
+    at Function._resolveFilename (module.js:334:11)
+    at Function._load (module.js:279:25)
+    at Module.require (module.js:357:17)
+    at require (module.js:368:17)
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\applets\main\index.js:2:11)
+    at Module._compile (module.js:432:26)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+    at Function._load (module.js:310:12)
+    at Module.require (module.js:357:17)
+[2\1\12 8:52PM] Error: Cannot find module '../Requires.js'
+    at Function._resolveFilename (module.js:334:11)
+    at Function._load (module.js:279:25)
+    at Module.require (module.js:357:17)
+    at require (module.js:368:17)
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\applets\main\index.js:2:11)
+    at Module._compile (module.js:432:26)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+    at Function._load (module.js:310:12)
+    at Module.require (module.js:357:17)
+[2\1\12 8:53PM] Error: Cannot find module './../Requires.js'
+    at Function._resolveFilename (module.js:334:11)
+    at Function._load (module.js:279:25)
+    at Module.require (module.js:357:17)
+    at require (module.js:368:17)
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\applets\main\index.js:2:11)
+    at Module._compile (module.js:432:26)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+    at Function._load (module.js:310:12)
+    at Module.require (module.js:357:17)
+[2\1\12 8:54PM] Error: Cannot find module '.../Requires.js'
+    at Function._resolveFilename (module.js:334:11)
+    at Function._load (module.js:279:25)
+    at Module.require (module.js:357:17)
+    at require (module.js:368:17)
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\applets\main\index.js:2:11)
+    at Module._compile (module.js:432:26)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+    at Function._load (module.js:310:12)
+    at Module.require (module.js:357:17)
+[2\1\12 8:54PM] Error: Cannot find module './utils/error_h.js'
+    at Function._resolveFilename (module.js:334:11)
+    at Function._load (module.js:279:25)
+    at Module.require (module.js:357:17)
+    at require (module.js:368:17)
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\applets\Requires.js:1:82)
+    at Module._compile (module.js:432:26)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+    at Function._load (module.js:310:12)
+    at Module.require (module.js:357:17)
+[2\1\12 9:11PM] 'erestart' is an unrecognized command.
+[2\1\12 9:11PM] ' ' is an unrecognized command.
+[2\1\12 10:32PM] 'restart.' is an unrecognized command.
+[2\1\12 10:32PM] SyntaxError: Unexpected token ;
+    at Module._compile (module.js:427:25)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+    at Function._load (module.js:310:12)
+    at Module.require (module.js:357:17)
+    at require (module.js:368:17)
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\applets\main\index.js:1:75)
+    at Module._compile (module.js:432:26)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+[2\1\12 10:32PM] SyntaxError: Unexpected token ;
+    at Module._compile (module.js:427:25)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+    at Function._load (module.js:310:12)
+    at Module.require (module.js:357:17)
+    at require (module.js:368:17)
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\applets\main\index.js:1:75)
+    at Module._compile (module.js:432:26)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+[2\2\12 11:13AM] TypeError: Cannot read property 'login_page' of undefined
+    at new <anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:5:53)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\main.js:24:28
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:76:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\db.js:188:14
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\server.js:230:7)
+    at [object Object].g (events.js:154:14)
+    at [object Object].emit (events.js:88:20)
+    at [object Object]._callHandler (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\db.js:789:25)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\server.js:342:32
+    at [object Object].parseBody (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\responses\mongo_reply.js:120:5)
+[2\2\12 1:30PM] ' restart' is an unrecognized command.
+[2\2\12 1:30PM] ' ' is an unrecognized command.
+[2\2\12 1:32PM] Error: Name: "No Connection Found", Description: "No connection was found when trying to access the database collection."
+    at Error (unknown source)
+    at [object Object].setModel (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:43:16)
+    at [object Object].addCollections (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:90:10)
+    at new <anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:26:10)
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\main.js:11:20)
+    at Module._compile (module.js:432:26)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+    at Function._load (module.js:310:12)
+    at Array.0 (module.js:470:10)
+[2\2\12 1:33PM] Error: Name: "No Connection Found", Description: "No connection was found when trying to access the database collection."
+    at Error (unknown source)
+    at [object Object].setModel (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:43:16)
+    at [object Object].addCollections (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:90:10)
+    at new <anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:26:10)
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\main.js:11:20)
+    at Module._compile (module.js:432:26)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+    at Function._load (module.js:310:12)
+    at Array.0 (module.js:470:10)
+[2\2\12 1:33PM] Error: Name: "No Connection Found", Description: "No connection was found when trying to access the database collection."
+    at Error (unknown source)
+    at [object Object].setModel (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:43:16)
+    at [object Object].addCollections (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:90:10)
+    at new <anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:26:10)
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\main.js:11:20)
+    at Module._compile (module.js:432:26)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+    at Function._load (module.js:310:12)
+    at Array.0 (module.js:470:10)
+[2\2\12 2:9PM] TypeError: Cannot call method 'createCollection' of undefined
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:92:30
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:49:9
+    at [object Object].collection (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\db.js:320:44)
+    at [object Object].setModel (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:47:22)
+    at [object Object].addCollections (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:90:10)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\main.js:24:22
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:77:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\db.js:188:14
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\server.js:230:7)
+    at [object Object].g (events.js:154:14)
+[2\2\12 2:49PM] TypeError: Object function () {
+    this._sessions = {};
+} has no method 'addSession'
+    at [object Object].logIn (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:75:14)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\main\index.js:56:30
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:397:9)
+    at [object Object].g (events.js:154:14)
+    at [object Object].emit (events.js:88:20)
+    at [object Object]._callHandler (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\db.js:789:25)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\server.js:342:32
+    at [object Object].parseBody (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\responses\mongo_reply.js:120:5)
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\server.js:333:24)
+    at [object Object].emit (events.js:67:17)
+[2\2\12 2:51PM] TypeError: Object function () {
+    this._sessions = {};
+} has no method 'addSession'
+    at [object Object].logIn (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:75:14)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\main\index.js:56:30
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:397:9)
+    at [object Object].g (events.js:154:14)
+    at [object Object].emit (events.js:88:20)
+    at [object Object]._callHandler (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\db.js:789:25)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\server.js:342:32
+    at [object Object].parseBody (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\responses\mongo_reply.js:120:5)
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\server.js:333:24)
+    at [object Object].emit (events.js:67:17)
+[2\2\12 3:16PM] TypeError: Cannot call method 'find' of undefined
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\main\index.js:37:56
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:155:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+    at [object Object].nextObject (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:17)
+    at Array.0 (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:174:12)
+    at EventEmitter._tickCallback (node.js:192:40)
+[2\2\12 3:18PM] TypeError: Object #<error> has no method 'getClientIpAddress'
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\main\index.js:37:74
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:155:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+    at [object Object].nextObject (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:17)
+    at Array.0 (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:174:12)
+    at EventEmitter._tickCallback (node.js:192:40)
+[2\2\12 3:36PM] TypeError: Cannot read property 'username' of null
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:148:18
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:862:5
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+    at [object Object].nextObject (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:17)
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:460:12)
+    at [object Object].g (events.js:154:14)
+    at [object Object].emit (events.js:88:20)

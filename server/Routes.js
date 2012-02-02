@@ -1,7 +1,12 @@
 var Routes = module.exports = {
-    'Site': {
-        basePattern: '/site',
-        applet: 'Site'
+    'main': {
+        basePattern: '/main',
+        applet: 'main'
+    },
+    
+    'Inbox': {
+        basePattern: '/Inbox',
+        applet: 'Inbox'
     },
     
     'Assets': {

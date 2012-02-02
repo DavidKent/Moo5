@@ -1,6 +1,6 @@
 var logging = true;
 var fs = require('fs');
-var fix="\033[0;37m", time="\033[2;34m";
+var fix="\033[0;37m", time="\033[32m";
    function log(msg, color){
         var col;
         switch(color)
@@ -13,7 +13,6 @@ var fix="\033[0;37m", time="\033[2;34m";
                 col = "\033[1;32m";
             break;
             case "yellow":
-            case "alert":
             case "warning":
                 col = "\033[1;33m";
             break;
@@ -26,10 +25,13 @@ var fix="\033[0;37m", time="\033[2;34m";
             case "cyan":
                 col = "\033[1;36m";
             break;
+            case "alert":
+                col = "\033[1;37m";
+            break;
             case "main":
             case "info":
             case "white":
-                col = "\033[1;37m";
+                col = "\033[37m";
             break;
         }
         

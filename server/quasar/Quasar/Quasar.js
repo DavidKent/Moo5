@@ -42,9 +42,6 @@ var Quasar = module.exports = function( appRoutes, config ) {
     this._applets = {};
     
     this.autoloadApplets();
-    this.router.buildRoutes();
-
-    this.renderer = new Renderer( this );
 };
 
 
@@ -60,6 +57,8 @@ var Quasar = module.exports = function( appRoutes, config ) {
         fn - [Optional] {Function} Function to call on HTTP server start
 */
 Quasar.prototype.init = function( fn ) {
+    this.router.buildRoutes();
+    this.renderer = new Renderer( this );
     var self = this;
     this.server.start( function() {
         var wsRoutes = self.router.getWSRoutes();

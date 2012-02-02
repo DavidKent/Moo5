@@ -24,8 +24,6 @@ var Services = module.exports = function() {
         <get>
 */
 Services.prototype.add = function( name, obj ) {    
-    name = name.toLowerCase;
-    
     this._services[ name ] = obj;
 };
 

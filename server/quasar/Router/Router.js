@@ -11,7 +11,7 @@ var Router = module.exports = function( quasar ) {
     this._quasar = quasar;
     this._routes = {};
     this._wsRoutes = {};
-    this._serviceRoutes = {};
+    this._serviceRoutes = [];
     
     this._serviceHandlers = {};
     
@@ -37,12 +37,14 @@ Router.prototype.buildRoutes = function() {
             //check if route is registered to a service
             var thisRoute = appRoutes[ appRoute ];
             if ( thisRoute.service !== undefined ) {
-                this._serviceRoutes[ thisRoute.basePattern ] = {
+                this._serviceRoutes.push( {
+                    'pattern': new RegExp( thisRoute.basePattern + '.*' ),
                     'handler': this._serviceHandlers[ thisRoute.service ],
                     'service': this._quasar.get( thisRoute.service )
-                };
+                } );
                 continue;
-            }
+            } 
+
         }
 
         var appletBasePattern = appRoutes[ appRoute ].basePattern;
@@ -173,12 +175,13 @@ Router.prototype.findRoute = function( request, response ) {
     var routeFound = false;
     var rules = Object.keys(this._routeRules);
     var route;
-    
+    var i, len;
+
     //test for service routes
-    for ( route in this._serviceRoutes ) {
-        if ( basePath === route ) {
-            var serviceRoute = this._serviceROutes[ route ];
-            serviceRoute.handler.apply( serviceRoute.service, request, response );
+    for ( i = 0, len = this._serviceRoutes.length; i < len; ++i ) {
+        var serviceRoute = this._serviceRoutes[ i ];
+        if ( serviceRoute.pattern.test( basePath ) ) {
+            serviceRoute.handler.call( serviceRoute.service, request, response );
             routeFound = true;
         }
     }
@@ -225,6 +228,22 @@ Router.prototype.findRoute = function( request, response ) {
     if ( routeFound === false ) {
         this.routeNotFound( request, response );    
     }
+};
+
+
+
+/*
+    Function: _testRouteRules
+
+        Find the appropriate controller for the WebSocket event
+        
+    Parameters:
+    
+        request - {Object} Client's Request object
+        response - {Object} Client's Response object
+*/
+Router.prototype._testRouteRules = function( request, response, fn, curr ) {
+    curr = curr || 0;
 };
 
 

@@ -29,10 +29,10 @@ function Message (args)
 	this.hide = function(start){
 		var time = start?0:300;
 		$("#"+this.id).find('.top_desc').fadeIn(time);
-		$("#"+this.id).find('.message_body').hide(time);
+		$("#"+this.id).find('.message_body').hide();
 	}
 	this.show = function(){
-		$("#"+this.id).find('.top_desc').fadeOut(300);
+		$("#"+this.id).find('.top_desc').hide();
 		$("#"+this.id).find('.message_body').fadeIn(300);
 		
 	}
@@ -54,14 +54,18 @@ function Message (args)
 	}
 	
 }
+var m;
 function setup_messages(){
-	var m = new Message ({
+    // "[\/]{2}[\{]
+    //{{{ FOR I<12{
+	 m = new Message ({
 		id:"asbasd", 
 		description:"Test Description", 
 		message:"test Message hi asdasd asdijasdjisjdiasjdiasdj",
 		user: "batman"}
 	);
 	m.add();
+    //} }}}
 	 m = new Message ({
 		id:"asbasd1", 
 		description:"Test Description", 

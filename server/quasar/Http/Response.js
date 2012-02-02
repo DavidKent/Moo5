@@ -230,22 +230,6 @@ Response.prototype.getExpires = function() {
 };
 
 
-
-/*
-    Function: getLastModified
-
-        Creates a string represnetaion of the response object including both content and header sections
-    
-    returns:
-    
-        String representation of HTTP response
-*/
-Response.prototype.getLastModified = function() {
-    this.getHeaderDate( 'Last-Modified' );
-};
-
-
-
 /*
     Function: getMaxAge
 
@@ -274,11 +258,11 @@ Response.prototype.getMaxAge = function() {
 /*
     Function: getStatusCode
 
-        Creates a string represnetaion of the response object including both content and header sections
+        Get the response's HTTP status code
     
     returns:
     
-        String representation of HTTP response
+        {Number} Status code
 */
 Response.prototype.getStatusCode = function() {
     return this._response.statusCode;
@@ -290,17 +274,15 @@ Response.prototype.getStatusCode = function() {
 /*
     Function: getVary
 
-        Creates a string represnetaion of the response object including both content and header sections
-    
+        Get the vary HTTP header's values in an array 
+        
     returns:
     
-        String representation of HTTP response
+        {Array} vary values
 */
 Response.prototype.getVary = function() {
-    var vary = this.get( 'Vary' );
-    if ( vary === undefined || vary === '' ) {
-        return [];
-    }
+    var vary = this.get( 'Vary' ) || '';
+
     return vary.split( ', ' );
 };
 
@@ -324,7 +306,10 @@ Response.prototype.setVary = function( headers ) {
 /*
     Function: isCachable
 
-        Creates a string represnetaion of the response object including both content and header sections
+        Determin if the response is cachable
+
+    Returns:
+        {Boolean} is response cachable
 */
 Response.prototype.isCachable = function() {
     
@@ -416,7 +401,12 @@ Response.prototype.setContent = function( content ) {
 /*
     Function: setEtag
 
-        Creates a string represnetaion of the response object including both content and header sections
+        Set the ETag header
+
+    Parameters:
+
+        value - {String} value to be set for the ETag header
+        weak - {Bool} boolean value indicating it is a weak Etag
 */
 Response.prototype.setETag = function( value, weak ) {
     if ( value === undefined ) {
@@ -519,7 +509,9 @@ Response.prototype.setSharedMaxAge = function( value ) {
 /*
     Function: setNotModified
 
-        Creates a string represnetaion of the response object including both content and header sections
+        Set the response as a not modified (304). Will remove any HTTP headers that 
+        might contradict this: 'Allow', 'Content-Encoding', 'Content-Language',
+        'Content-Length', 'Content-MD5', 'Content-Type', 'Last-Modified'
 */
 Response.prototype.setNotModified = function() {
     this.setStatusCode( 304 );
@@ -976,6 +968,12 @@ Response.prototype.getCookie = function( name ) {
 };
 
 
+
+/*
+    Function: render
+
+        Render the response and end the response.
+*/
 Response.render = function() {
     var renderer = this._quasar.getViewEngine();
     

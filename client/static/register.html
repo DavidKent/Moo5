@@ -12,7 +12,11 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../public/css/bootstrap.css" rel="stylesheet">
+    <script src="../public/js/jquery.js"></script>
+    <script src="../public/js/cookies.js"></script>
+    <script src="../public/js/home.js"></script>
+    
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -38,9 +42,9 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
           <form action="" class="pull-right">
-            <input class="input-small" type="text" placeholder="Username">
-            <input class="input-small" type="password" placeholder="Password">
-            <button class="btn" type="submit">Sign in</button>
+            <input class="input-small" id="suser" type="text" placeholder="Username">
+            <input class="input-small" id="spass" type="password" placeholder="Password">
+            <button class="btn" id="sbutton" type="submit">Sign in</button>
           </form>
         </div>
       </div>
@@ -120,27 +124,27 @@
 										}
 									</style>
 									<div class="clearfix">
-										<label for="reg_user">Username</label>
+										<label for="ruser">Username</label>
 											<div class="input">
-												<input class="span6" id="reg_user" name="reg_user" size="20" type="text">
+												<input class="span6" id="ruser" name="ruser" size="20" type="text">
 											</div>
 										<div style="margin-left:auto; margin-right:auto; width:70%">
 											<hr style="margin-bottom:4px; margin-top:8px">
 										</div>
-										<label for="reg_pass">Password</label>
+										<label for="rpass">Password</label>
 											<div class="input">
-												<input class="span6" id="reg_pass" name="reg_pass" size="20" type="password">
+												<input class="span6" id="rpass" name="rpass" size="20" type="password">
 											</div>
-										<label for="reg_pass2">Password again</label>
+										<label for="rpass2">Password again</label>
 											<div class="input">
-												<input class="span6" id="reg_pass2" name="reg_pass2" size="20" type="password">
+												<input class="span6" id="rpass2" name="rpass2" size="20" type="password">
 											</div>
 										<div style="margin-left:auto; margin-right:auto; width:70%">
 											<hr style="margin-bottom:4px; margin-top:8px">
 										</div>
-										<label for="reg_email">Email</label>
+										<label for="remail">Email</label>
 											<div class="input">
-												<input class="span6" id="reg_user" name="reg_email" size="20" type="text">
+												<input class="span6" id="remail" name="remail" size="20" type="text">
 											</div>
 											<br>
 											<div>
