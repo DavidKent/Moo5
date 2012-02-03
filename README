@@ -1,0 +1,4 @@
+PROGRESS - 
+    Finished authentication, using my ironhide plugin. Users may now log in if their database is set up, pages must be restricted using
+    ironhide's handle function as of now. Pretty messy right now, need to finish inbox messaging and then I will move on to other things
+    such as user accounts and all that fun stuff.
