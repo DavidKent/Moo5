@@ -422,3 +422,38 @@
     at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:460:12)
     at [object Object].g (events.js:154:14)
     at [object Object].emit (events.js:88:20)
+[2\2\12 9:48PM] ' restart' is an unrecognized command.
+[2\2\12 9:48PM] ' ' is an unrecognized command.
+[2\2\12 10:36PM] 'erestart' is an unrecognized command.
+[2\2\12 10:36PM] ' ' is an unrecognized command.
+[2\2\12 11:1PM] Error: name: "Bad Route", description: "Expecting applet route rule to be of type `String`"
+    at Error (unknown source)
+    at [object Object].buildRoutes (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Router\Router.js:72:23)
+    at [object Object].init (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Quasar\Quasar.js:60:17)
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\main.js:13:12)
+    at Module._compile (module.js:432:26)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+    at Function._load (module.js:310:12)
+    at Array.0 (module.js:470:10)
+    at EventEmitter._tickCallback (node.js:192:40)
+[2\2\12 11:5PM] TypeError: Cannot read property 'routes' of undefined
+    at [object Object].buildRoutes (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Router\Router.js:52:47)
+    at [object Object].init (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Quasar\Quasar.js:60:17)
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\main.js:13:12)
+    at Module._compile (module.js:432:26)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+    at Function._load (module.js:310:12)
+    at Array.0 (module.js:470:10)
+    at EventEmitter._tickCallback (node.js:192:40)
+[2\2\12 11:6PM] TypeError: Cannot read property 'routes' of undefined
+    at [object Object].buildRoutes (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Router\Router.js:52:47)
+    at [object Object].init (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Quasar\Quasar.js:60:17)
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\main.js:13:12)
+    at Module._compile (module.js:432:26)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+    at Function._load (module.js:310:12)
+    at Array.0 (module.js:470:10)
+    at EventEmitter._tickCallback (node.js:192:40)

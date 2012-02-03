@@ -26,7 +26,7 @@ var Request = module.exports = function( req ) {
     this._cookies = {};
     this._request = req;
     this._parsedUrl = url.parse( this._request.url, true );
-    
+    this._queryString = url.parse( this._request.url ).query;
     this._parseCookies();
     
     this._routeObject = undefined;
@@ -426,7 +426,7 @@ Request.prototype.getPort = function() {
         <getQuery>
 */
 Request.prototype.getQueryString = function() {
-    return this._parsedUrl.query;
+    return this._queryString;
 };
 
 
@@ -446,7 +446,7 @@ Request.prototype.getQueryString = function() {
 */
 Request.prototype.getQuery = function() {
     //return this._parsedUrl.query;
-    return url.parse( this._request.url ).query;
+    return this._parsedUrl.query;
 };
 
 
@@ -815,7 +815,7 @@ Request.prototype.getTransport = function() {
         {String} Value of HTTP header
 */
 Request.prototype.get = function( header ) {
-    return this._request.headers[ header ];
+    return this._request.headers[ (header || '').toLowerCase() ];
 };
 
 
@@ -858,15 +858,19 @@ Request.prototype.getHeaderDate = function( header, defaultValue ) {
 
 */
 Request.prototype._parseCookies = function() {
-    var cookies = this.get( 'Cookie' )
-    if (cookies) {
+    var cookies = this.get( 'Cookie' ) || '';
+    if (cookies.length) {
         cookies = cookies.split( ';' );
         for (var i = 0, len = cookies.length; i < len; i++ ) {
+            
             cookies[i] = cookies[i].trim();
             
-            var cookieParts = cookie[i].split( '=' );
+            var cookieParts = cookies[i].split( '=' );
+            
             var cookie = new Cookie( { name: cookieParts[ 0 ], value: cookieParts[ 1 ] } );
             
+            
+            //set the first part of the cookie, portion before the = as the cookie name
             this._cookies[ cookieParts[ 0 ] ] = cookie;
         }
     }

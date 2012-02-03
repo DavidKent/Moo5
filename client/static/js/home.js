@@ -4,6 +4,9 @@ function doc_onReady(){
     if(h == undefined) {
         $.cookie('session', GenerateSessionID());
     }
+    $("#rsubmit").click(register);
+    $("#lsubmit").click(login);
+    
 }
 function login(){
     var user = $('#suser').val();
@@ -12,7 +15,7 @@ function login(){
     $.ajax({
       url: window.location.origin+"/main/login?"+data,
       success: function(data){
-        alert(data);
+        window.location.reload();
       }
     });
 }
@@ -48,7 +51,7 @@ function register(){
     $.ajax({
       url: window.location.origin+"/main/register?" + data,
       success: function(data){
-        alert(data);
+        window.location.reload();
       }
     });
 }

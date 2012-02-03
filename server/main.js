@@ -28,4 +28,5 @@
         });
     }
     exports.app = server;
+    exports.database = database;
     exports.security = ironhide;

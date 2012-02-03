@@ -6,8 +6,8 @@
 */
 Routes = module.exports = {
     //the name is important, it is used for url generation in the View
-    'blog_home': {
-        pattern: '/',
+    'inbox': {
+        pattern: '',
         controller: 'homeAction'//blog.homeAction
     },
     

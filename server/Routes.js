@@ -4,9 +4,9 @@ var Routes = module.exports = {
         applet: 'main'
     },
     
-    'Inbox': {
-        basePattern: '/Inbox',
-        applet: 'Inbox'
+    'inbox': {
+        basePattern: '/inbox',
+        applet: 'inbox'
     },
     
     'Assets': {

@@ -587,7 +587,7 @@ Response.prototype.send = function() {
         if ( !this._cookies.hasOwnProperty( cookie ) ) {
                 
         }
-        cookies.push( cookie.toString() );
+        cookies.push( this._cookies[ cookie ].toString() );
     }
     
     this._response.setHeader('Set-Cookie', cookies);
@@ -945,7 +945,7 @@ Response.prototype.setCookie = function( properties ) {
     if ( !properties.name ) {
         throw Error( 'name: "Bad Cookie", description: "Function requires valid cookie name"' );
     }
-    this._cookies[ properties ] = new Cookie( properties );
+    this._cookies[ properties.name ] = new Cookie( properties );
 };
 
 
@@ -976,6 +976,7 @@ Response.prototype.getCookie = function( name ) {
 */
 Response.render = function() {
     var renderer = this._quasar.getViewEngine();
+    var content = this._quasar.renderer.render();
     
 };
 
@@ -991,5 +992,19 @@ Response.render = function() {
 */
 Response.prototype.setContentType = function( contentType ) {
     this._contentType = contentType;
+};
+
+
+/*
+    Function: getContentType
+
+        Get response `Content-Type` header's value
+        
+    Returns:
+        
+        contentType - {String} Value of Content-Type header
+*/
+Response.prototype.getContentType = function() {
+    return this._contentType;
 };
 //TODO: upgrade to TLS headers

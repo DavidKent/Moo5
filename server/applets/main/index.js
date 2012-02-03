@@ -1,6 +1,7 @@
 var Route = require( './Routes.js' );
 var req = require('../Requires.js');
 var app = require('../../main.js');
+var rm = require('../ResponseMethods.js');
 
 var Blog = module.exports = function( app ) {
 	this._app = app;
@@ -12,7 +13,18 @@ Blog.prototype.homeAction = function( request, response ) {
 
     var allowed = function() {
         response.setStatusCode(200);
-        response.setContent(req.walk.getPage('/logged_in.html').toString());
+        
+        var page = req.walk.getPage('/logged_in.html').toString();
+        var session = app.security.getSession(request);
+        var user = undefined;
+        if(session != undefined)
+            user = app.security._memoryDB.getSessionInfo(session).user;
+
+        var newPage = req.renderer.to_html(page, {
+            username : user
+        });
+        
+        response.setContent(newPage);
         response.send();
     }
     var notallowed = function() {
@@ -32,16 +44,13 @@ Blog.prototype.logIn = function( request, response ) {
         console.log(query);
         var correct = function() {
             var onlogin = function(){
-                console.log('logged in');
+                  rm.success(response);
             }
-            console.log(app.security.getSession(request));
-            console.log(request.getClientIpAddress());
-            app.security.logIn(app.security.getSession(request), 'desperado', request.getClientIpAddress(), onlogin);
+            app.security.logIn(app.security.getSession(request), query.user, request.getClientIpAddress(), onlogin);
         }
         var notcorrect = function() {
-            console.log('no username found with that password');
         }
-        app.security._mongodb.isCorrectLogin('desperado', 'sfshadow12', correct, notcorrect);
+        app.security._mongodb.isCorrectLogin(query.user, query.pass, correct, notcorrect);
     }
     app.security.handle(request, response, ['user','admin'], loggedin, notloggedin); //returning notloggedin every time
  
@@ -50,33 +59,24 @@ Blog.prototype.logIn = function( request, response ) {
 
 Blog.prototype.register = function( request, response ) {
     var loggedin = function() {
-        alreadyLoggedIn(response);
+        rm.alreadyLoggedIn(response);
     }
     var notloggedin = function() {
         var query = request.getQuery();
         var canregister = function(){
             var onregistered = function(){
                 var onlogin = function(){
+                    rm.success(response);
                 }
-                app.security.logIn(app.security.getSession(request), 'desperado', request.getClientIpAddress(), onlogin);
+                app.security.logIn(app.security.getSession(request), query.user, request.getClientIpAddress(), onlogin);
             }
-            app.security.registerUser( 'desperado', 'sfshadow12', 'user', { email: 'desperado1234@live.com' }, onregistered);
+            app.security.registerUser( query.user, query.pass, 'user', { email: query.email }, onregistered);
         }
         var cantregister = function(){
-            cantRegister(response);
+            rm.cantRegister(response);
         }
         app.security._mongodb.canRegister(request.getClientIpAddress(), canregister, cantregister);
     }
     app.security.handle(request, response, ['user','admin'], loggedin, notloggedin);
 };
 
-function alreadyLoggedIn(response) {
-    response.setStatusCode(401);
-    response.setContent("Already Logged In");
-    response.send();
-}
-function cantRegister(response) {
-    response.setStatusCode(401);
-    response.setContent("You cannot register any more accounts");
-    response.send();
-}

@@ -7,14 +7,14 @@ var fix="\033[0;37m", time="\033[32m";
         {
             case "red":
             case "error":
-                col = "\033[1;31m";
+                col = "\033[31m";
             break;
             case "green":
-                col = "\033[1;32m";
+                col = "\033[32m";
             break;
             case "yellow":
             case "warning":
-                col = "\033[1;33m";
+                col = "\033[33m";
             break;
             case "magenta":
                 col = "\033[1;35m";
@@ -26,7 +26,7 @@ var fix="\033[0;37m", time="\033[32m";
                 col = "\033[1;36m";
             break;
             case "alert":
-                col = "\033[1;37m";
+                col = "\033[37m";
             break;
             case "main":
             case "info":

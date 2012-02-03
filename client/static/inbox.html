@@ -1,112 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="generator" content="HTML Tidy for Windows (vers 14 February 2006), see www.w3.org">
     <meta charset="utf-8">
-    <title>eKamadeva</title>
+    <title>
+      eKamadeva
+    </title>
     <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <meta name="author" content=""><!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <!-- Le styles -->
-    <link href="{{{ public }}}/css/bootstrap.css" rel="stylesheet">
+    <link href="../../public/css/bootstrap.css" rel="stylesheet" type="text/css">
     <style type="text/css">
-      body {
+  body {
         padding-top: 60px;
       }
-    </style>
-
-    <!-- Le fav and touch icons -->
+    </style><!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap-dropdown.js"></script>
-	<script src="js/inbox.js"></script>
+    <script src="../../public/js/jquery.js" type="text/javascript">
+</script>
+    <script src="../../public/js/bootstrap-dropdown.js" type="text/javascript">
+</script>
+    <script src="../../public/js/inbox.js" type="text/javascript">
+</script>
+    <style type="text/css">
+            #page { 
+                        background-color:white;
+                        margin-top:-20px;
+                }
+                #picHold{
+                        width:330px;
+                        margin-left:150px;
+                        margin-right:auto;
+                }
+                .tebow{
+                        text-align:right;
+                }
+                .tell {
+                    font-size:22px;
+                }
+                .top_desc{
+                        width:80%;
+                        margin-left:auto;
+                        margin-right:auto;
+                }
+                .well
+                {
+                        border:1px solid rgba(0, 0, 0, 0.20);
+                }
+                .pagination{
+                        margin-bottom:-10px;
+                }
+    </style>
   </head>
-
   <body>
-
     <div class="topbar">
       <div class="topbar-inner">
         <div class="container-fluid">
           <a class="brand" href="#">eKamadeva</a>
           <ul class="nav">
-            <li ><a href="logged_in.html">Home</a></li>
-			<li class="dropdown" data-dropdown="dropdown" >
-				<a href="#" class="dropdown-toggle">Profile</a>
-				<ul class="dropdown-menu">
-				  <li><a href="modify_profile.html">Modify</a></li>
-				  <li><a href="#">View</a></li>
-				  <li class="divider"></li>
-				  <li><a href="#">Preferences</a></li>
-				</ul>
-			</li>
-			<li class="active"><a href="inbox.html">Inbox</a></li>
-			<li><a href="#contact">Find Matches</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="logged_in.html">Home</a>
+            </li>
+            <li class="dropdown" data-dropdown="dropdown">
+              <a href="#" class="dropdown-toggle">Profile</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="modify_profile.html">Modify</a>
+                </li>
+                <li>
+                  <a href="#">View</a>
+                </li>
+                <li>
+                  <a href="#">Preferences</a>
+                </li>
+              </ul>
+            </li>
+            <li class="active">
+              <a href="inbox.html">Inbox</a>
+            </li>
+            <li>
+              <a href="#contact">Find Matches</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
-			<p class="pull-right">Logged in as <a href="#">username</a></p>
+          <p class="pull-right">
+            Logged in as <a href="#">username</a>
+          </p>
         </div>
       </div>
     </div>
-	<style>
-		#page { 
-			background-color:white;
-			margin-top:-20px;
-		}
-		#picHold{
-			width:330px;
-			margin-left:150px;
-			margin-right:auto;
-		}
-		.tebow{
-			text-align:right;
-		}
-		.tell {
-		    font-size:22px;
-		}
-		.top_desc{
-			width:80%;
-			margin-left:auto;
-			margin-right:auto;
-		}
-		.well
-		{
-			border:1px solid rgba(0, 0, 0, 0.20);
-		}
-		.pagination{
-			margin-bottom:-10px;
-		}
-	</style>
     <div class="container-fluid">
-		<div class="sidebar">
-			<div class="well">
-				<button style="width:100px"class="btn">Inbox</button><hr>
-				<button style="width:100px"class="btn">Sent</button><hr>
-				<button style="width:100px"class="btn">Deleted</button>
-			</div>
-		</div>
-		<div class="content">
-			<div class="hero-unit">
-				 
-				<div class="pagination" style="margin-left:auto; margin-right:auto">
-					<ul>
-					  <li class="prev disabled"><a href="#">< Previous</a></li>
-					  <li class="active"><a href="#">1</a></li>
-					  <li><a href="#">2</a></li>
-					  <li><a href="#">3</a></li>
-					  <li><a href="#">4</a></li>
-					  <li><a href="#">5</a></li>
-					  <li class="next"><a href="#">Next ></a></li>
-					</ul>
-				</div>
-			</div>  
-		</div>
-	</div>
+      <div class="sidebar">
+        <div class="well">
+          <button style="width:100px" class="btn">Inbox</button>
+          <hr>
+          <button style="width:100px" class="btn">Sent</button>
+          <hr>
+          <button style="width:100px" class="btn">Deleted</button>
+        </div>
+      </div>
+      <div class="content">
+        <div class="hero-unit">
+          <div class="pagination" style="margin-left:auto; margin-right:auto">
+            <ul>
+              <li class="prev disabled">
+                <a href="#">&lt; Previous</a>
+              </li>
+              <li class="active">
+                <a href="#">1</a>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+              <li>
+                <a href="#">4</a>
+              </li>
+              <li>
+                <a href="#">5</a>
+              </li>
+              <li class="next">
+                <a href="#">Next &gt;</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -16,7 +16,7 @@ var Router = module.exports = function( quasar ) {
     this._serviceHandlers = {};
     
     this._routeRules = {
-        '_method': this._methodDirective,
+        '_method': this._methodRule,
         '_transport': this._transportRule
     };
 };
@@ -75,7 +75,7 @@ Router.prototype.buildRoutes = function() {
             routes[ route ].requirements = routes[ route ].requirements || {};
              
             //parse for route parameters
-            var params = routes[ route ].pattern.match( /:\w+/g ) || [];
+            var params = routes[ route ].pattern.match( /:\w+/ ) || [];
             var tempExp = routes[ route ].pattern;
             for ( var i = 0, len = params.length; i < len; ++i ) {
                 var param = params[ i ].substr( 1 );
@@ -95,7 +95,7 @@ Router.prototype.buildRoutes = function() {
             }
             
             var controller = routes[ route ].controller;
-            routes[ route ]._patternRegex = new RegExp( appletBasePattern + tempExp, 'g' );
+            routes[ route ]._patternRegex = new RegExp( '^' +  appletBasePattern + tempExp + '$' );
             
             //action controller function
             routes[ route ]._actionController = applet.object[ controller ];
@@ -193,7 +193,6 @@ Router.prototype.findRoute = function( request, response ) {
             if ( !route._patternRegex.test( basePath ) ) {
                 continue;
             }
-            
             //make sure request matches this route's requirements
             var ruleResult = true;
             for ( var i = 0, len = rules.length; i < len; ++i ) {
@@ -206,7 +205,7 @@ Router.prototype.findRoute = function( request, response ) {
             
             //one or more of the route rules did not match
             if ( ruleResult === false ) {
-                continue;    
+                continue;
             }
                 
             var params = route._patternRegex.exec( basePath ) || [];
@@ -324,8 +323,6 @@ Router.prototype.generateUrl = function( routeName, params ) {
     Function: _methodRule
 
         Test for the _method route rule
-    
-    **Access - private
     
     Parameters:
     
