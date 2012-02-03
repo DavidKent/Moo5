@@ -457,3 +457,14 @@
     at Function._load (module.js:310:12)
     at Array.0 (module.js:470:10)
     at EventEmitter._tickCallback (node.js:192:40)
+[2\3\12 1:58PM] Error: Name: "DB Error", Description: "An error was thrown: Error: failed to connect to [127.0.0.1:27017]"
+    at Error (unknown source)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:74:19
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\db.js:183:16
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\server.js:399:7)
+    at [object Object].emit (events.js:88:20)
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:97:15)
+    at [object Object].emit (events.js:70:17)
+    at Socket.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\connection.js:399:12)
+    at Socket.emit (events.js:67:17)
+    at Array.0 (net.js:320:10)

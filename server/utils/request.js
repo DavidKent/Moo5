@@ -1,5 +1,5 @@
 var cons = require('./console.js');
-var moon = require('../static/walk.js');
+var moon = require('./moon.js');
 
 var url = require('url');
 var requests = 0;
