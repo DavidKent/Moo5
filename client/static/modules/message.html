@@ -1,23 +1,21 @@
-<html>
-<body>
-<div id="{|id|}" class="well">
+<div id="{{{ id }}}" class="well">
 					<div class="top_desc">
-							<h4>{|description|}</h4>
+							<h4>{{{ description }}}</h4>
 					</div>
 					<table class="message_body">
 						<tr>
 							<td style="width:220px">
 								<a href="#">
 									<img class="thumbnail" src="http://placehold.it/210x150" alt=""><br>
-									<h6>{|user|}</h6>
+									<h6>{{{ user }}}</h6>
 								</a>
 							</td>
 							<td>
 								<div class="well description">
-									<h4>{|description|}</h4>
+									<h4>{{{ description }}}</h4>
 								</div>
 								<div style="font-size:14px;" class="well tell">
-									{|message|} 
+									{{{ message }}} 
 								</div>
 							</td>
 						</tr>
@@ -36,5 +34,3 @@
 						</tr>
 					</table>
 				</div>
-</body>
-</html>

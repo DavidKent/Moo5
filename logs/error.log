@@ -468,3 +468,170 @@
     at Socket.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\connection.js:399:12)
     at Socket.emit (events.js:67:17)
     at Array.0 (net.js:320:10)
+[2\7\12 4:51PM] Error: Name: "DB Error", Description: "An error was thrown: Error: failed to connect to [127.0.0.1:27017]"
+    at Error (unknown source)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:82:19
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\db.js:183:16
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\server.js:399:7)
+    at [object Object].emit (events.js:88:20)
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:97:15)
+    at [object Object].emit (events.js:70:17)
+    at Socket.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\connection.js:399:12)
+    at Socket.emit (events.js:67:17)
+    at Array.0 (net.js:320:10)
+[2\7\12 4:54PM] Error: Can't set headers after they are sent.
+    at ServerResponse.setHeader (http.js:520:11)
+    at [object Object].send (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Http\Response.js:593:20)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\main\index.js:28:18
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:66:29
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:376:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+[2\7\12 5:0PM] ReferenceError: alreadyLoggedIn is not defined
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\main\index.js:40:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:66:29
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:376:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+    at [object Object].nextObject (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:17)
+    at Array.0 (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:174:12)
+[2\7\12 5:0PM] Error: Can't set headers after they are sent.
+    at ServerResponse.setHeader (http.js:520:11)
+    at [object Object].send (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Http\Response.js:593:20)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\main\index.js:28:18
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:66:29
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:376:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+[2\7\12 5:0PM] Error: Can't set headers after they are sent.
+    at ServerResponse.setHeader (http.js:520:11)
+    at [object Object].send (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Http\Response.js:593:20)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\main\index.js:28:18
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:66:29
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:376:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+[2\7\12 5:0PM] Error: Can't set headers after they are sent.
+    at ServerResponse.setHeader (http.js:520:11)
+    at [object Object].send (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Http\Response.js:593:20)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\main\index.js:28:18
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:66:29
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:376:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+[2\7\12 5:1PM] Error: Can't set headers after they are sent.
+    at ServerResponse.setHeader (http.js:520:11)
+    at [object Object].send (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Http\Response.js:593:20)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\main\index.js:28:18
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:66:29
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:376:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+[2\7\12 5:2PM] Error: Can't set headers after they are sent.
+    at ServerResponse.setHeader (http.js:520:11)
+    at [object Object].send (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Http\Response.js:593:20)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\main\index.js:28:18
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:66:29
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:376:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+[2\7\12 5:3PM] Error: Can't set headers after they are sent.
+    at ServerResponse.setHeader (http.js:520:11)
+    at [object Object].send (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Http\Response.js:593:20)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\main\index.js:28:18
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:66:29
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:376:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+[2\7\12 5:10PM] TypeError: Object <div id="{ id }" class="well">
+					<div class="top_desc">
+							<h4>{ description }</h4>
+					</div>
+					<table class="message_body">
+						<tr>
+							<td style="width:220px">
+								<a href="#">
+									<img class="thumbnail" src="http://placehold.it/210x150" alt=""><br>
+									<h6>{ user }</h6>
+								</a>
+							</td>
+							<td>
+								<div class="well description">
+									<h4>{ description }</h4>
+								</div>
+								<div style="font-size:14px;" class="well tell">
+									{ message } 
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+							</td>
+							<td>
+								<div class="pagination" style="float:right">
+									<ul>
+									  <li><a href="#">Block User</a></li>
+									  <li><a href="#">Delete</a></li>
+									  <li><a href="#">Reply</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div> has no method 'indexOf'
+    at Object.includes (C:\Users\Zerotension\Desktop\Moo5_test\server\utils\mustache.js:366:23)
+    at Object.render (C:\Users\Zerotension\Desktop\Moo5_test\server\utils\mustache.js:79:17)
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\utils\mustache.js:436:16)
+    at Object.to_html (C:\Users\Zerotension\Desktop\Moo5_test\server\utils\mustache.js:448:31)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\inbox\index.js:29:47
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:6:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+[2\7\12 5:11PM] TypeError: Cannot read property 'privLevel' of null
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:360:24
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:862:5
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+    at [object Object].nextObject (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:17)
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:460:12)
+    at [object Object].g (events.js:154:14)
+    at [object Object].emit (events.js:88:20)
+[2\7\12 5:13PM] TypeError: Cannot read property 'privLevel' of null
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:360:24
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:862:5
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+    at [object Object].nextObject (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:17)
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:460:12)
+    at [object Object].g (events.js:154:14)
+    at [object Object].emit (events.js:88:20)
