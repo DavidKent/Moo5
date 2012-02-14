@@ -6,9 +6,9 @@ css_fileType = "css", script_fileType = "js";
 var file_urls = [], files   = [];
 var cut_off = "./client/static";
 exports.loadResources = function(){
-var resource_Dir = "./client";
+    var resource_Dir = "./client";
 
-var walker  = walk.walk(resource_Dir, { followLinks: false });
+    var walker  = walk.walk(resource_Dir, { followLinks: false });
     walker.on('file', function(root, stat, next) {
         appendFile(root+'/'+stat.name);
         next();
@@ -17,7 +17,7 @@ var walker  = walk.walk(resource_Dir, { followLinks: false });
     walker.on('end', function() {
         cons.alert('Found ' + files.length + ' files in ' + resource_Dir + '.');
         cons.alert('Resources loaded successfully.');
-            self.test();
+            //self.test();
     });
 
 }

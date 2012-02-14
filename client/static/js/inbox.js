@@ -1,92 +1,118 @@
 var message_code, messages = [];
-function get_code(){
-	$.ajax({
-  url: 'modules/message.html',
-  beforeSend: function( xhr ) {
-    xhr.overrideMimeType( 'text/plain; charset=x-user-defined' );
-  },
-  success: function(data) {
-    message_code = data;
-    console.log(message_code);
-	setup_messages();
-	$('.well').click(message_onClick);
-  }
-});
+$(document).ready(onReady);
+
+function onReady(){
+    $('.well').click(message_onClick);
+    $('h4').click(toggleHeader_onClick);
+    $('a').click(aTag_onClick);
+    $("#SendMessage").click(sendMessage);
+    closeAllMessages();
+}
+function closeAllMessages(){
+    var u = $('.well');
+    $.each( u, function(index, item) {
+        if($(item).attr('id') != undefined)
+            hide($(item).attr('id'));
+    });
 }
 
-function Message (args)
-{
-	this.select = function(){
-		for(var i = 0; i < messages.length; i++)
-		{
-			if(messages[i].id != this.id)
-				messages[i].hide();
-			else
-				messages[i].show();
-			
-		}
-	}
-	this.hide = function(start){
-		var time = start?0:300;
-		$("#"+this.id).find('.top_desc').fadeIn(time);
-		$("#"+this.id).find('.message_body').hide();
-	}
-	this.show = function(){
-		$("#"+this.id).find('.top_desc').hide();
-		$("#"+this.id).find('.message_body').fadeIn(300);
-		
-	}
-	this.id = args.id;
-	this.html;
-	this.output = function(){
-		if(message_code == undefined)
-			get_code();
-		this.html = message_code.replace('{|message|}', args.message)
-						   .replace('{|user|}', args.user)
-						   .replace('{|id|}', args.id)
-						   .replace(/\{\|description\|\}/g, args.description);
-		$(".hero-unit").html(this.html+$(".hero-unit").html());
-		this.hide(true);
-	}
-	this.add = function(){
-		messages.push(this);
-		this.output();
-	}
-	
+function aTag_onClick(e) {
+    var target = e.target || e.srcElement;
+    var button = $(target).attr('class');
+    if(button === undefined)
+    return;
+    if(button === 'reply')
+    {
+        $(".send").show();
+    }
+    if(button === 'delete'){
+        var parents = $(target).parents();
+        $.each(parents, function(index, item) {
+            if($(item).attr('id') != null && $(item).attr('class') != null)
+            {
+                if($(item).attr('class') === 'well')
+                {
+                    deleteMessage($(item).attr('id'));
+                    console.log($(item).attr('id'));
+                }
+            }
+        });
+    }
 }
-var m;
-function setup_messages(){
-    // "[\/]{2}[\{]
-    //{{{ FOR I<12{
-	 m = new Message ({
-		id:"asbasd", 
-		description:"Test Description", 
-		message:"test Message hi asdasd asdijasdjisjdiasjdiasdj",
-		user: "batman"}
-	);
-	m.add();
-    //} }}}
-	 m = new Message ({
-		id:"asbasd1", 
-		description:"Test Description", 
-		message:"test Message hi asdasd asdijasdjisjdiasjdiasdj",
-		user: "batman"}
-	);
-	m.add();
-	 m = new Message ({
-		id:"asbasd2", 
-		description:"Test Description", 
-		message:"test Message hi asdasd asdijasdjisjdiasjdiasdj",
-		user: "batman"}
-	);
-	m.add();
+
+function deleteMessage(id) {
+var data = "id=" + id;
+  $.ajax({
+      url: window.location.origin+"/inbox/deleteMessage?"+data,
+      success: function(data){
+        $('.messages').remove('#'+id);
+      }
+    });
 }
-function message_onClick(e){
-	var h = $(this).attr('id');
-	for(var i = 0; i < messages.length; i++)
-	{
-		if(messages[i].id == h)
-			messages[i].select();
-	}
+
+function sendMessage() {
+    var subject = getEscape($("#subject").val(), true);
+    var body = getEscape($("#body").val(), true);
+    var to = getEscape($("#to").val(), true);
+    console.log(subject);
+    $(".send").hide();
+    var data ="message="+body+"&to="+to+"&description="+subject;
+      $.ajax({
+          url: window.location.origin+"/inbox/sendMessage?"+data,
+          success: function(data){
+                        console.log('sent successfully');
+                }
+                });
 }
-get_code();
+
+function toggleHeader_onClick(e){
+  var target = e.target || e.srcElement;
+  var pwell = $(target).parent().parent();
+  if(pwell == undefined || $(pwell).attr('id') == undefined  || $(pwell).attr('class') == undefined || $(pwell).attr('class') == 'well')
+  return;
+  mToggle($(pwell).attr('id'));
+}
+function message_onClick(e){ 
+    var target = e.target || e.srcElement;
+    if($(target).attr('id') == undefined) return;
+    var id = $(target).attr('id');
+    mToggle(id);
+}
+function getEscape(str, forward){ 
+    var h = [
+                { a : "$", b : "%24" },
+                { a : "&", b : "%26" },
+                { a : "+", b : "%2B" },
+                { a : ",", b : "%2C" },
+                { a : "/", b : "%2F" },
+                { a : ":", b : "%3A" },
+                { a : ";", b : "%3B" },
+                { a : "=", b : "%3D" },
+                { a : "?", b : "%3F" },
+                { a : "@", b : "%40" }
+            ]
+    var newStr = str;
+    for(i in h) {
+        if(forward) 
+            newStr = newStr.replace( h[i].a, h[i].b );
+        else
+            newStr = newStr.replace( h[i].b, h[i].a );
+    }
+    return newStr;
+}
+function hide(id){
+    $("#"+id).find('.top_desc').fadeIn(300);
+    $("#"+id).find('.message_body').hide();
+    $("#"+id).addClass('hidden');
+}
+function show(id){
+    $("#"+id).find('.top_desc').hide();
+    $("#"+id).find('.message_body').fadeIn(300);
+    $("#"+id).removeClass('hidden');
+}
+function mToggle(id){
+    if($("#"+id).attr('class').indexOf('hidden') != -1)
+        show(id);
+    else
+        hide(id);
+}

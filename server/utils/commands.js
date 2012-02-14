@@ -1,4 +1,6 @@
     var h = require('./stat_print.js');
+    var app = require('../main.js');
+    var vdc = require('./various_db_commands.js');
     var cons = require('./console.js');
     var fs = require('fs');
     exports.parseInput = function(inp){
@@ -17,6 +19,27 @@
                     break;
                     case "test":
                         
+                    break;
+                    case "m -send":
+                     var time = new Date().getTime();
+                     var data = { 
+                                    description: 'MOST RECENT',
+                                    sentby: time,
+                                    to: 'desperado',
+                                    from: 'hooplah',
+                                    message: 'hello'
+                                
+                                }
+                        vdc.sendMessage(app.database, data, function(){});
+                    break;
+                    case "m -clear":
+                        vdc.clearMessages(app.database);
+                    break
+                    case "m -print":
+                        vdc.getMessages(app.database, 'desperado', function(data){
+                        for(var i = 0; i < data.length; i++)
+                            console.log(data[i]);
+                        }, function(){ console.log('no documents found'); });
                     break;
                     case "restart":
                         cons.alert("Restarting the server...");

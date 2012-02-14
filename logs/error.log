@@ -635,3 +635,272 @@
     at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:460:12)
     at [object Object].g (events.js:154:14)
     at [object Object].emit (events.js:88:20)
+[2\12\12 10:36AM] TypeError: Object #<Object> has no method 'logIn'
+    at init (C:\Users\Zerotension\Desktop\Moo5_test\server\main.js:20:18)
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\main.js:4:5)
+    at Module._compile (module.js:432:26)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+    at Function._load (module.js:310:12)
+    at Array.0 (module.js:470:10)
+    at EventEmitter._tickCallback (node.js:192:40)
+[2\12\12 10:36AM] TypeError: Cannot call method 'logIn' of undefined
+    at init (C:\Users\Zerotension\Desktop\Moo5_test\server\main.js:20:18)
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\main.js:4:5)
+    at Module._compile (module.js:432:26)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+    at Function._load (module.js:310:12)
+    at Array.0 (module.js:470:10)
+    at EventEmitter._tickCallback (node.js:192:40)
+[2\12\12 10:37AM] Error: Name: "DB Error", Description: "An error was thrown: Error: failed to connect to [127.0.0.1:27017]"
+    at Error (unknown source)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:82:19
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\db.js:183:16
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\server.js:399:7)
+    at [object Object].emit (events.js:88:20)
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:97:15)
+    at [object Object].emit (events.js:70:17)
+    at Socket.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\connection.js:399:12)
+    at Socket.emit (events.js:67:17)
+    at Array.0 (net.js:320:10)
+[2\12\12 10:49AM] ReferenceError: database is not defined
+    at Object.clearMessages (C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:16:5)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\inbox\index.js:17:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:64:25
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:360:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+    at [object Object].nextObject (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:17)
+[2\12\12 10:49AM] TypeError: Cannot call method 'toString' of undefined
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\inbox\index.js:18:52
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:64:25
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:360:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+    at [object Object].nextObject (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:17)
+    at Array.0 (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:174:12)
+[2\12\12 11:14AM] Error: key $push must not start with '$'
+    at Error (unknown source)
+    at Function.checkKey (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\bson\bson.js:1039:11)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\bson\bson.js:191:14
+    at Function.serializeWithBufferAndIndex (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\bson\bson.js:178:10)
+    at BSON.serializeWithBufferAndIndex (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\bson\bson.js:1072:15)
+    at [object Object].toBinary (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\commands\insert_command.js:128:37)
+    at [object Object].write (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\connection.js:137:35)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\db.js:1055:14
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\db.js:1091:5)
+    at Collection.insertAll (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:284:26)
+[2\12\12 11:50AM] 'restartm -send' is an unrecognized command.
+[2\12\12 11:52AM] 'm-clear' is an unrecognized command.
+[2\12\12 11:58AM] ReferenceError: docs is not defined
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:6:17
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+    at [object Object].nextObject (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:17)
+    at Array.0 (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:174:12)
+    at EventEmitter._tickCallback (node.js:192:40)
+[2\12\12 12:0AM] ReferenceError: docs is not defined
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:6:17
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+    at [object Object].nextObject (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:17)
+    at Array.0 (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:174:12)
+    at EventEmitter._tickCallback (node.js:192:40)
+[2\13\12 10:44AM] Error: Name: "DB Error", Description: "An error was thrown: Error: failed to connect to [127.0.0.1:27017]"
+    at Error (unknown source)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:82:19
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\db.js:183:16
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\server.js:399:7)
+    at [object Object].emit (events.js:88:20)
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:97:15)
+    at [object Object].emit (events.js:70:17)
+    at Socket.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\connection\connection.js:399:12)
+    at Socket.emit (events.js:67:17)
+    at Array.0 (net.js:320:10)
+[2\13\12 12:32AM] TypeError: Cannot call method 'setModel' of undefined
+    at Object.getMessages (C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:8:14)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\inbox\index.js:45:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:64:25
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:360:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+    at [object Object].nextObject (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:17)
+[2\13\12 12:33AM] TypeError: Object #<Object> has no method 'setDatabase'
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\applets\inbox\index.js:6:5)
+    at Module._compile (module.js:432:26)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+    at Function._load (module.js:310:12)
+    at Module.require (module.js:357:17)
+    at require (module.js:368:17)
+    at [object Object].autoloadApplets (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Quasar\Quasar.js:96:21)
+    at new <anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Quasar\Quasar.js:44:10)
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\main.js:6:18)
+[2\13\12 12:34AM] TypeError: Cannot call method 'setModel' of undefined
+    at Object.getMessages (C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:4:14)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\inbox\index.js:44:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:64:25
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:360:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+    at [object Object].nextObject (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:17)
+[2\13\12 12:35AM] TypeError: Cannot call method 'setModel' of undefined
+    at Object.getMessages (C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:4:14)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\inbox\index.js:44:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:64:25
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:360:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+    at [object Object].nextObject (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:17)
+[2\13\12 12:35AM] TypeError: Cannot call method 'setModel' of undefined
+    at Object.getMessages (C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:4:14)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\inbox\index.js:44:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:64:25
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:360:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+    at [object Object].nextObject (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:17)
+[2\13\12 1:28PM] SyntaxError: Unexpected token )
+    at Module._compile (module.js:427:25)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+    at Function._load (module.js:310:12)
+    at Module.require (module.js:357:17)
+    at require (module.js:368:17)
+    at [object Object].autoloadApplets (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Quasar\Quasar.js:96:21)
+    at new <anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\quasar\Quasar\Quasar.js:44:10)
+    at Object.<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\main.js:6:18)
+    at Module._compile (module.js:432:26)
+[2\13\12 1:31PM] TypeError: Cannot read property 'length' of undefined
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:30:25
+    at Collection.remove (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:173:12)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:29:38
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:50:12
+    at [object Object].collection (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\db.js:320:44)
+    at [object Object].setModel (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:47:22)
+    at Object.removeMessage (C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:28:14)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\inbox\index.js:65:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:64:25
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:360:9
+[2\13\12 1:34PM] Error: callback is mandatory
+    at [object Object].toArray (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:122:11)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:30:30
+    at Collection.find (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:698:5)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:29:33
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:50:12
+    at [object Object].collection (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\db.js:320:44)
+    at [object Object].setModel (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:47:22)
+    at Object.removeMessage (C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:28:14)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\inbox\index.js:65:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:64:25
+[2\13\12 1:46PM] ReferenceError: ObjectId is not defined
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:29:61
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:50:12
+    at [object Object].collection (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\db.js:320:44)
+    at [object Object].setModel (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:47:22)
+    at Object.removeMessage (C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:28:14)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\inbox\index.js:65:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:64:25
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:360:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+[2\13\12 1:47PM] TypeError: Object [object Object] has no method 'ObjectId'
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:29:70
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:50:12
+    at [object Object].collection (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\db.js:320:44)
+    at [object Object].setModel (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:47:22)
+    at Object.removeMessage (C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:28:14)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\inbox\index.js:65:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:64:25
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:360:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+[2\13\12 1:49PM] TypeError: Object #<Object> has no method 'ObjectId'
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:29:77
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:51:12
+    at [object Object].collection (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\db.js:320:44)
+    at [object Object].setModel (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:48:22)
+    at Object.removeMessage (C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:28:14)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\inbox\index.js:65:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:64:25
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:361:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+[2\13\12 1:51PM] TypeError: Cannot read property 'privLevel' of null
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:361:24
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:862:5
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+    at [object Object].nextObject (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:17)
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:460:12)
+    at [object Object].g (events.js:154:14)
+    at [object Object].emit (events.js:88:20)
+[2\13\12 1:53PM] TypeError: Object #<Object> has no method 'ObjectId'
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:30:67
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:51:12
+    at [object Object].collection (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\db.js:320:44)
+    at [object Object].setModel (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:48:22)
+    at Object.removeMessage (C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:29:14)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\inbox\index.js:65:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:64:25
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:361:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+[2\13\12 1:55PM] TypeError: Cannot read property 'privLevel' of null
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:361:24
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:862:5
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+    at [object Object].nextObject (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:17)
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:460:12)
+    at [object Object].g (events.js:154:14)
+    at [object Object].emit (events.js:88:20)
+[2\13\12 1:56PM] ReferenceError: ObjectId is not defined
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:30:65
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:51:12
+    at [object Object].collection (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\db.js:320:44)
+    at [object Object].setModel (C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:48:22)
+    at Object.removeMessage (C:\Users\Zerotension\Desktop\Moo5_test\server\utils\various_db_commands.js:29:14)
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\applets\inbox\index.js:65:13
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\Ironhide.js:64:25
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:361:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:861:34
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+[2\13\12 1:58PM] TypeError: Cannot read property 'privLevel' of null
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\Ironhide\MongoDB.js:361:24
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\collection.js:862:5
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:136:9
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:183:11
+    at C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:35
+    at [object Object].close (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:666:5)
+    at [object Object].nextObject (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:472:17)
+    at [object Object].<anonymous> (C:\Users\Zerotension\Desktop\Moo5_test\server\node_modules\mongodb\lib\mongodb\cursor.js:460:12)
+    at [object Object].g (events.js:154:14)
+    at [object Object].emit (events.js:88:20)
